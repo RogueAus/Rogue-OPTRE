@@ -24,7 +24,6 @@ _null = [] execvm "scripts\vehicle\crew\crew.sqf"; 								// vehicle HUD
 //_null = [] execVM "scripts\restrictions.sqf"; 									// gear restrictions and safezone
 //_null = [] execVM "scripts\pilotCheck.sqf"; 									// pilots only
 _null = [] execVM "scripts\jump.sqf";// jump action
-_null = [] execVM "scripts\holster.sqf";											//Holsteraction	
 _null = [] execVM "scripts\icons.sqf";											// blufor map tracker Quiksilver
 //_null = [] execVM "scripts\voice_control\voiceControl.sqf";						// Voice Control
 //if (PARAMS_HeliRope != 0) then {call compile preprocessFileLineNumbers "scripts\vehicle\fastrope\zlt_fastrope.sqf";};	
@@ -32,7 +31,8 @@ _null = [] execVM "scripts\icons.sqf";											// blufor map tracker Quiksilve
 
 // call QS_fnc_respawnPilot;
 
-
+keyspressed = compile preprocessFile "functions\pa_keyHandler.sqf";
+(findDisplay 46) displayAddEventHandler ["KeyDown", "_this call keyspressed"];
 
 //Dynamic Groups
 

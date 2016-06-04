@@ -10,7 +10,7 @@ _alt = _this select 4;
 switch (_code) do
 {
 	//Holster / recall weapon.
-	case 35:
+	/*case 35:
 	{
 		if(_shift && !_ctrlKey && currentWeapon player != "") then {
 			pa_cur_wep = currentWeapon player;
@@ -36,6 +36,6 @@ switch (_code) do
 			[[player,false],"scripts\jump.sqf",nil,FALSE] spawn_BIS_fnc_MP; //Global execution 
 			_handled = true;
 		};
-	};
+	};*/
 };
 _handled;
