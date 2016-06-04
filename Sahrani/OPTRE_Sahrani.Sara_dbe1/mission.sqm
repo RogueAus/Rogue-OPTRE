@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=108;
+		nextID=117;
 	};
 	class Camera
 	{
-		pos[]={9907.3926,213.32799,9941.5674};
-		dir[]={0.033217229,-0.48371798,0.87473089};
-		up[]={0.018358218,0.87509596,0.4834972};
-		aside[]={0.99939376,-1.79368e-006,-0.03795483};
+		pos[]={9836.2822,177.98898,10107.851};
+		dir[]={-0.82630241,-0.55779678,0.079591013};
+		up[]={-0.55533206,0.82983947,0.05348755};
+		aside[]={0.095890425,-1.4232064e-006,0.99550593};
 	};
 };
 binarizationWanted=0;
@@ -391,7 +391,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=47;
+		items=46;
 		class Item0
 		{
 			dataType="Layer";
@@ -6189,7 +6189,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={9885.2373,141.8595,10068.772};
-				angles[]={0,3.1627381,0};
+				angles[]={0,3.1627462,0};
 			};
 			side="Empty";
 			flags=4;
@@ -6198,6 +6198,29 @@ class Mission
 			};
 			id=5204;
 			type="OPTRE_UNSC_falcon_green";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ammoBox";
+					expression="[_this,_value] call bis_fnc_initAmmoBox;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="[[[[],[]],[[],[]],[[],[]],[[],[]]],true]";
+						};
+					};
+				};
+				nAttributes=1;
+			};
 		};
 		class Item9
 		{
@@ -10906,47 +10929,7 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={9781.6455,141.24635,10094.512};
-				angles[]={0,6.2722416,0};
-			};
-			side="Empty";
-			flags=4;
-			class Attributes
-			{
-				init="this enableSimulation false;  this allowDamage false;  this setVariable[""realname"",""UNSC Supplies""];";
-			};
-			id=5784;
-			type="OPTRE_Ammo_Rack_Weapons";
-			class CustomAttributes
-			{
-				class Attribute0
-				{
-					property="ammoBox";
-					expression="[_this,_value] call bis_fnc_initAmmoBox;";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"STRING"
-								};
-							};
-							value="[[[[""OPTRE_MA5B"",""OPTRE_MA5BGL"",""OPTRE_BR55HB"",""OPTRE_M392_DMR_ScopedRifle"",""OPTRE_M73"",""OPTRE_M6G"",""OPTRE_M41_SSR"",""OPTRE_M41_SSR_G"",""OPTRE_M45"",""OPTRE_M7"",""OPTRE_SRS99D"",""OPTRE_BR55HB_ScopedRifle"",""OPTRE_M45E"",""OPTRE_M6G_SF"",""OPTRE_M7S"",""OPTRE_MA5BGL_AC"",""OPTRE_MA5B_AC""],[1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1]],[[""OPTRE_60Rnd_762x51_Mag"",""OPTRE_60Rnd_762x51_Mag_Tracer"",""OPTRE_32Rnd_762x51_Mag"",""OPTRE_32Rnd_762x51_Mag_Tracer"",""OPTRE_36Rnd_95x40_Mag"",""OPTRE_36Rnd_95x40_Mag_Tracer"",""OPTRE_15Rnd_762x51_Mag"",""OPTRE_100Rnd_95x40_Box"",""OPTRE_100Rnd_95x40_Box_Tracer"",""OPTRE_200Rnd_95x40_Box"",""OPTRE_200Rnd_95x40_Box_Tracer"",""OPTRE_8Rnd_127x40_Mag"",""OPTRE_8Rnd_127x40_AP_Mag"",""OPTRE_8Rnd_127x40_Mag_Tracer"",""OPTRE_6Rnd_8Gauge_Pellets"",""OPTRE_6Rnd_8Gauge_Slugs"",""OPTRE_60Rnd_5x23mm_Mag"",""OPTRE_60Rnd_5x23mm_Mag_tracer"",""OPTRE_4Rnd_145x114_APFSDS_Mag"",""OPTRE_M41_Twin_HEAT"",""OPTRE_M41_Twin_HEAT_G"",""OPTRE_M41_Twin_HEAP"",""OPTRE_M9_Frag"",""OPTRE_M2_Smoke"",""OPTRE_M2_Smoke_Blue"",""OPTRE_M2_Smoke_Yellow"",""OPTRE_M2_Smoke_Red"",""OPTRE_M2_Smoke_Green"",""OPTRE_M2_Smoke_Orange"",""OPTRE_M2_Smoke_Purple""],[1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1]],[[""OPTRE_Biofoam"",""OPTRE_MedKit"",""OPTRE_MA5B_AmmoCounter"",""OPTRE_MA5B_AmmoCounter_NoIS"",""OPTRE_MA5B_Flashlight"",""OPTRE_BR55HB_Scope"",""OPTRE_M73_SmartLink"",""OPTRE_M6G_Flashlight"",""OPTRE_M6G_Scope"",""OPTRE_M45_Flashlight"",""OPTRE_M45_Flashlight_red"",""OPTRE_M7_silencer"",""OPTRE_M7_Flashlight"",""OPTRE_M7_Laser"",""OPTRE_SRS99_Scope"",""OPTRE_SRS99_Laser"",""OPTRE_SRS99_Bipod"",""OPTRE_BoonieHat_Airforce"",""OPTRE_BoonieHat_Army_ARI"",""OPTRE_BoonieHat_Army_DES"",""OPTRE_BoonieHat_Marine"",""OPTRE_BoonieHat_ODST"",""OPTRE_BoonieHat_Army_SNO"",""OPTRE_BoonieHat_Army_TRO"",""OPTRE_BoonieHat_Army_WDL"",""OPTRE_Cap_FinalDawn"",""OPTRE_Cap_ODST"",""OPTRE_UNSC_CH252_Helmet_DES"",""OPTRE_UNSC_Marine_Helmet"",""OPTRE_UNSC_CH252_Helmet_MED"",""OPTRE_UNSC_CH252_Helmet_WDL"",""OPTRE_UNSC_CH252_Helmet_Sniper_DES"",""OPTRE_UNSC_Marine_Helmet_Sniper"",""OPTRE_UNSC_CH252_Helmet_Sniper_WDL"",""OPTRE_UNSC_CH252_Helmet_Vacuum_DES"",""OPTRE_UNSC_Marine_Helmet_Vacuum"",""OPTRE_UNSC_CH252_Helmet_Vacuum_MED"",""OPTRE_UNSC_CH252_Helmet_Vacuum_WDL"",""OPTRE_UNSC_ODST_Helmet_CBRN_dp"",""OPTRE_UNSC_ODST_Helmet_Comms_dp"",""OPTRE_UNSC_ODST_Helmet_Recon_dp"",""OPTRE_UNSC_ODST_Helmet_Sniper_dp"",""OPTRE_UNSC_ODST_Helmet_Blue_dp"",""OPTRE_UNSC_ODST_Helmet_Green_dp"",""OPTRE_UNSC_ODST_Helmet_Medic_dp"",""OPTRE_UNSC_ODST_Helmet_dp"",""OPTRE_UNSC_ODST_Helmet_Orange_dp"",""OPTRE_UNSC_ODST_Helmet_Purple_dp"",""OPTRE_UNSC_ODST_Helmet_Red_dp"",""OPTRE_UNSC_ODST_Helmet_Scorch_dp"",""OPTRE_UNSC_ODST_Helmet_Stirls_dp"",""OPTRE_UNSC_ODST_Helmet_TheDog_dp"",""OPTRE_UNSC_ODST_Helmet_Urban_dp"",""OPTRE_UNSC_ODST_Helmet_Yellow_dp"",""OPTRE_UNSC_ODST_Helmet_Zero_dp"",""OPTRE_Helmet_NavyDeckCrew"",""OPTRE_PatrolCap_Airforce"",""OPTRE_PatrolCap_Army_ARI"",""OPTRE_PatrolCap_Army_DES"",""OPTRE_PatrolCap_Marine"",""OPTRE_PatrolCap_Navy"",""OPTRE_PatrolCap_Army_SNO"",""OPTRE_PatrolCap_Army_TRO"",""OPTRE_PatrolCap_Army_WDL"",""OPTRE_UNSC_Recon_Helmet"",""OPTRE_UNSC_Recon_Helmet_dp"",""OPTRE_UNSC_Airforce_Uniform"",""OPTRE_UNSC_Army_Uniform_L_ARI"",""OPTRE_UNSC_Army_Uniform_L_DES"",""OPTRE_UNSC_Army_Uniform_L_SNO"",""OPTRE_UNSC_Army_Uniform_L_TRO"",""OPTRE_UNSC_Army_Uniform_L_WDL"",""OPTRE_UNSC_Army_Uniform_M_ARI"",""OPTRE_UNSC_Army_Uniform_M_DES"",""OPTRE_UNSC_Army_Uniform_M_SNO"",""OPTRE_UNSC_Army_Uniform_M_TRO"",""OPTRE_UNSC_Army_Uniform_M_WDL"",""OPTRE_UNSC_Army_Uniform_ARI"",""OPTRE_UNSC_Army_Uniform_DES"",""OPTRE_UNSC_Army_Uniform_SNO"",""OPTRE_UNSC_Army_Uniform_TRO"",""OPTRE_UNSC_Army_Uniform_WDL"",""OPTRE_UNSC_M52_Vest_DES"",""OPTRE_UNSC_Marine_Vest"",""OPTRE_UNSC_M52_Vest_MED"",""OPTRE_UNSC_M52_Vest_WDL"",""OPTRE_UNSC_M52_Vest_Sniper_DES"",""OPTRE_UNSC_Marine_Vest_Sniper"",""OPTRE_UNSC_M52_Vest_Sniper_WDL"",""OPTRE_UNSC_Airforce_Vest"",""OPTRE_UNSC_M52_Vest_Vacuum_DES"",""OPTRE_UNSC_Marine_Vest_Vacuum"",""OPTRE_UNSC_M52_Vest_Vacuum_MED"",""OPTRE_UNSC_M52_Vest_Vacuum_WDL"",""OPTRE_UNSC_ODST_Vest_Blue"",""OPTRE_UNSC_ODST_Vest_Green"",""OPTRE_UNSC_ODST_Vest_Medic"",""OPTRE_UNSC_ODST_Vest"",""OPTRE_UNSC_ODST_Vest_Orange"",""OPTRE_UNSC_ODST_Vest_Purple"",""OPTRE_UNSC_ODST_Vest_Red"",""OPTRE_UNSC_ODST_Vest_Scorch"",""OPTRE_UNSC_ODST_Vest_Stirls"",""OPTRE_UNSC_ODST_vest_TheDog"",""OPTRE_UNSC_ODST_Vest_Urban"",""OPTRE_UNSC_ODST_Vest_Yellow"",""OPTRE_UNSC_ODST_Vest_Zero"",""OPTRE_UNSC_Marine_Uniform"",""OPTRE_UNSC_Marine_Uniform_L"",""OPTRE_UNSC_Marine_Uniform_M"",""OPTRE_UNSC_Marine_Uniform_Pilot"",""OPTRE_UNSC_Army_Uniform_Medic"",""OPTRE_UNSC_ODST_Uniform"",""OPTRE_UNSC_ODST_Uniform_Medic"",""OPTRE_UNSC_ODST_Uniform_Scorch"",""OPTRE_UNSC_ODST_Uniform_Stirls"",""OPTRE_UNSC_ODST_Uniform_TheDog"",""OPTRE_UNSC_ODST_Uniform_Urban"",""OPTRE_UNSC_ODST_Uniform_Zero"",""OPTRE_UNSC_ODST_Uniform_L"",""OPTRE_UNSC_ODST_Uniform_M"",""OPTRE_UNSC_ODST_Uniform_Sniper"",""OPTRE_UNSC_ODST_Uniform_Instructor"",""OPTRE_UNSC_ODST_uniform_recruit"",""OPTRE_NVG"",""ItemGPS""],[1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1]],[[""OPTRE_kitbag_rgr_AA"",""OPTRE_ANPRC_515"",""OPTRE_ANPRC_521_Black"",""OPTRE_ANPRC_521_Green"",""OPTRE_kitbag_rgr_AT"",""OPTRE_kitbag_rgr_EXP"",""OPTRE_kitbag_rgr_ENG"",""OPTRE_ILCS_Rucksack_Medical"",""OPTRE_ILCS_Rucksack_Black"",""OPTRE_ILCS_Rucksack_green"",""OPTRE_ILCS_Rucksack_tan"",""OPTRE_ILCS_Rucksack_Black_AT"",""OPTRE_ILCS_Rucksack_Black_EXP"",""OPTRE_ILCS_Rucksack_Black_Pouches"",""OPTRE_ILCS_Rucksack_green_Pouches"",""OPTRE_ILCS_Rucksack_tan_Pouches""],[1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1]]],false]";
-						};
-					};
-				};
-				nAttributes=1;
-			};
-		};
-		class Item37
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={9779.75,141.24582,10094.5};
+				position[]={9792.6396,141.24582,10094.582};
 				angles[]={0,6.2696939,0};
 			};
 			side="Empty";
@@ -10974,14 +10957,14 @@ class Mission
 									"STRING"
 								};
 							};
-							value="[[[[],[]],[[""OPTRE_60Rnd_762x51_Mag"",""OPTRE_60Rnd_762x51_Mag_Tracer"",""OPTRE_32Rnd_762x51_Mag"",""OPTRE_32Rnd_762x51_Mag_Tracer"",""OPTRE_15Rnd_762x51_Mag"",""OPTRE_36Rnd_95x40_Mag"",""OPTRE_36Rnd_95x40_Mag_Tracer"",""OPTRE_100Rnd_95x40_Box"",""OPTRE_100Rnd_95x40_Box_Tracer"",""OPTRE_200Rnd_95x40_Box"",""OPTRE_200Rnd_95x40_Box_Tracer"",""OPTRE_8Rnd_127x40_Mag"",""OPTRE_8Rnd_127x40_AP_Mag"",""OPTRE_8Rnd_127x40_Mag_Tracer"",""OPTRE_6Rnd_8Gauge_Pellets"",""OPTRE_6Rnd_8Gauge_Slugs"",""OPTRE_60Rnd_5x23mm_Mag"",""OPTRE_60Rnd_5x23mm_Mag_tracer"",""OPTRE_48Rnd_5x23mm_Mag"",""OPTRE_48Rnd_5x23mm_JHP_Mag"",""OPTRE_48Rnd_5x23mm_FMJ_Mag"",""OPTRE_48Rnd_5x23mm_Mag_tracer"",""OPTRE_4Rnd_145x114_APFSDS_Mag"",""OPTRE_4Rnd_145x114_HVAP_Mag"",""OPTRE_4Rnd_145x114_HEDP_Mag"",""OPTRE_M41_Twin_HEAT"",""OPTRE_M41_Twin_HEAT_G"",""OPTRE_M41_Twin_HEAP"",""OPTRE_M9_Frag"",""OPTRE_M2_Smoke"",""OPTRE_M2_Smoke_Blue"",""OPTRE_M2_Smoke_Yellow"",""OPTRE_M2_Smoke_Red"",""OPTRE_M2_Smoke_Green"",""OPTRE_M2_Smoke_Orange"",""OPTRE_M2_Smoke_Purple""],[]],[[""OPTRE_Biofoam""],[]],[[],[]]],true]";
+							value="[[[[""MCC_axe"",""OPTRE_BR55HB"",""OPTRE_BR55HB_ScopedRifle"",""MCC_axe_fire"",""OPTRE_M392_DMR"",""OPTRE_M392_DMR_ScopedRifle"",""OPTRE_M41_SSR"",""OPTRE_M41_SSR_G"",""OPTRE_M45"",""OPTRE_M45A"",""OPTRE_M45E"",""OPTRE_M6G"",""OPTRE_M6G_SF"",""OPTRE_M7"",""OPTRE_M7_Folded"",""OPTRE_M7S"",""OPTRE_M73"",""OPTRE_MA5BGL"",""OPTRE_MA5BGL_AC"",""OPTRE_MA5B"",""OPTRE_MA5B_AC"",""MCC_shovel"",""OPTRE_SRS99D""],[]],[[""OPTRE_60Rnd_762x51_Mag"",""OPTRE_60Rnd_762x51_Mag_Tracer"",""OPTRE_32Rnd_762x51_Mag"",""OPTRE_32Rnd_762x51_Mag_Tracer"",""OPTRE_15Rnd_762x51_Mag"",""OPTRE_36Rnd_95x40_Mag"",""OPTRE_36Rnd_95x40_Mag_Tracer"",""OPTRE_100Rnd_95x40_Box"",""OPTRE_100Rnd_95x40_Box_Tracer"",""OPTRE_200Rnd_95x40_Box"",""OPTRE_200Rnd_95x40_Box_Tracer"",""OPTRE_8Rnd_127x40_Mag"",""OPTRE_8Rnd_127x40_AP_Mag"",""OPTRE_8Rnd_127x40_Mag_Tracer"",""OPTRE_6Rnd_8Gauge_Pellets"",""OPTRE_6Rnd_8Gauge_Slugs"",""OPTRE_60Rnd_5x23mm_Mag"",""OPTRE_60Rnd_5x23mm_Mag_tracer"",""OPTRE_48Rnd_5x23mm_Mag"",""OPTRE_48Rnd_5x23mm_JHP_Mag"",""OPTRE_48Rnd_5x23mm_FMJ_Mag"",""OPTRE_48Rnd_5x23mm_Mag_tracer"",""OPTRE_4Rnd_145x114_APFSDS_Mag"",""OPTRE_4Rnd_145x114_HVAP_Mag"",""OPTRE_4Rnd_145x114_HEDP_Mag"",""OPTRE_M41_Twin_HEAT"",""OPTRE_M41_Twin_HEAT_G"",""OPTRE_M41_Twin_HEAP"",""OPTRE_M9_Frag"",""OPTRE_M2_Smoke"",""OPTRE_M2_Smoke_Blue"",""OPTRE_M2_Smoke_Yellow"",""OPTRE_M2_Smoke_Red"",""OPTRE_M2_Smoke_Green"",""OPTRE_M2_Smoke_Orange"",""OPTRE_M2_Smoke_Purple"",""Laserbatteries""],[]],[[""OPTRE_Biofoam"",""OPTRE_UNSC_Army_Uniform_L_ARI"",""OPTRE_UNSC_Army_Uniform_L_DES"",""OPTRE_UNSC_Army_Uniform_L_TRO"",""OPTRE_UNSC_Army_Uniform_L_WDL"",""OPTRE_UNSC_Army_Uniform_M_ARI"",""OPTRE_UNSC_Army_Uniform_M_DES"",""OPTRE_UNSC_Army_Uniform_M_TRO"",""OPTRE_UNSC_Army_Uniform_M_WDL"",""OPTRE_UNSC_Army_Uniform_ARI"",""OPTRE_UNSC_Army_Uniform_DES"",""OPTRE_UNSC_Army_Uniform_TRO"",""OPTRE_UNSC_Army_Uniform_WDL"",""OPTRE_BoonieHat_Airforce"",""OPTRE_BoonieHat_Army_ARI"",""OPTRE_BoonieHat_Army_DES"",""OPTRE_BoonieHat_Marine"",""OPTRE_BoonieHat_ODST"",""OPTRE_BoonieHat_Army_TRO"",""OPTRE_BoonieHat_Army_WDL"",""OPTRE_Cap_FinalDawn"",""OPTRE_Cap_ODST"",""OPTRE_UNSC_CH252_Helmet_DES"",""OPTRE_UNSC_Marine_Helmet"",""OPTRE_UNSC_CH252_Helmet_MED"",""OPTRE_UNSC_CH252_Helmet_WDL"",""OPTRE_UNSC_CH252_Helmet_Sniper_DES"",""OPTRE_UNSC_Marine_Helmet_Sniper"",""OPTRE_UNSC_CH252_Helmet_Sniper_WDL"",""OPTRE_UNSC_CH252_Helmet_Vacuum_DES"",""OPTRE_UNSC_Marine_Helmet_Vacuum"",""OPTRE_UNSC_CH252_Helmet_Vacuum_MED"",""OPTRE_UNSC_CH252_Helmet_Vacuum_WDL"",""OPTRE_UNSC_ODST_Helmet_CBRN"",""OPTRE_UNSC_ODST_Helmet_CBRN_dp"",""OPTRE_UNSC_ODST_Helmet_Comms"",""OPTRE_UNSC_ODST_Helmet_Comms_dp"",""OPTRE_UNSC_ODST_Helmet_Recon"",""OPTRE_UNSC_ODST_Helmet_Recon_dp"",""OPTRE_UNSC_ODST_Helmet_Sniper"",""OPTRE_UNSC_ODST_Helmet_Sniper_dp"",""OPTRE_UNSC_ODST_Helmet_Blue"",""OPTRE_UNSC_ODST_Helmet_Blue_dp"",""OPTRE_UNSC_ODST_Helmet_Green"",""OPTRE_UNSC_ODST_Helmet_Green_dp"",""OPTRE_UNSC_ODST_Helmet_Medic"",""OPTRE_UNSC_ODST_Helmet_Medic_dp"",""OPTRE_UNSC_ODST_Helmet"",""OPTRE_UNSC_ODST_Helmet_dp"",""OPTRE_UNSC_ODST_Helmet_Orange"",""OPTRE_UNSC_ODST_Helmet_Orange_dp"",""OPTRE_UNSC_ODST_Helmet_Purple"",""OPTRE_UNSC_ODST_Helmet_Purple_dp"",""OPTRE_UNSC_ODST_Helmet_Red"",""OPTRE_UNSC_ODST_Helmet_Red_dp"",""OPTRE_UNSC_ODST_Helmet_Scorch"",""OPTRE_UNSC_ODST_Helmet_Scorch_dp"",""OPTRE_UNSC_ODST_Helmet_Stirls"",""OPTRE_UNSC_ODST_Helmet_Stirls_dp"",""OPTRE_UNSC_ODST_Helmet_TheDog"",""OPTRE_UNSC_ODST_Helmet_TheDog_dp"",""OPTRE_UNSC_ODST_Helmet_Urban"",""OPTRE_UNSC_ODST_Helmet_Urban_dp"",""OPTRE_UNSC_ODST_Helmet_Yellow"",""OPTRE_UNSC_ODST_Helmet_Yellow_dp"",""OPTRE_UNSC_ODST_Helmet_Zero"",""OPTRE_UNSC_ODST_Helmet_Zero_dp"",""OPTRE_Helmet_NavyDeckCrew"",""OPTRE_UNSC_M52_Vest_DES"",""OPTRE_UNSC_Marine_Vest"",""OPTRE_UNSC_M52_Vest_MED"",""OPTRE_UNSC_M52_Vest_WDL"",""OPTRE_UNSC_M52_Vest_Sniper_DES"",""OPTRE_UNSC_Marine_Vest_Sniper"",""OPTRE_UNSC_M52_Vest_Sniper_WDL"",""OPTRE_UNSC_Airforce_Vest"",""OPTRE_UNSC_M52_Vest_Vacuum_DES"",""OPTRE_UNSC_Marine_Vest_Vacuum"",""OPTRE_UNSC_M52_Vest_Vacuum_MED"",""OPTRE_UNSC_M52_Vest_Vacuum_WDL"",""OPTRE_UNSC_ODST_Vest_Blue"",""OPTRE_UNSC_ODST_Vest_Green"",""OPTRE_UNSC_ODST_Vest_Medic"",""OPTRE_UNSC_ODST_Vest"",""OPTRE_UNSC_ODST_Vest_Orange"",""OPTRE_UNSC_ODST_Vest_Purple"",""OPTRE_UNSC_ODST_Vest_Red"",""OPTRE_UNSC_ODST_Vest_Scorch"",""OPTRE_UNSC_ODST_Vest_Stirls"",""OPTRE_UNSC_ODST_vest_TheDog"",""OPTRE_UNSC_ODST_Vest_Urban"",""OPTRE_UNSC_ODST_Vest_Yellow"",""OPTRE_UNSC_ODST_Vest_Zero"",""OPTRE_UNSC_Marine_Uniform"",""OPTRE_UNSC_Marine_Uniform_L"",""OPTRE_UNSC_Marine_Uniform_M"",""OPTRE_UNSC_Marine_Uniform_Pilot"",""OPTRE_UNSC_Army_Uniform_Medic"",""OPTRE_NVG"",""OPTRE_UNSC_ODST_Uniform"",""OPTRE_UNSC_ODST_Uniform_Medic"",""OPTRE_UNSC_ODST_Uniform_Scorch"",""OPTRE_UNSC_ODST_Uniform_Stirls"",""OPTRE_UNSC_ODST_Uniform_TheDog"",""OPTRE_UNSC_ODST_Uniform_Urban"",""OPTRE_UNSC_ODST_Uniform_Zero"",""OPTRE_UNSC_ODST_Uniform_L"",""OPTRE_UNSC_ODST_Uniform_M"",""OPTRE_UNSC_ODST_Uniform_Sniper"",""OPTRE_UNSC_ODST_Uniform_Instructor"",""OPTRE_UNSC_ODST_uniform_recruit"",""OPTRE_PatrolCap_Airforce"",""OPTRE_PatrolCap_Army_ARI"",""OPTRE_PatrolCap_Army_DES"",""OPTRE_PatrolCap_Marine"",""OPTRE_PatrolCap_Navy"",""OPTRE_PatrolCap_Army_SNO"",""OPTRE_PatrolCap_Army_TRO"",""OPTRE_PatrolCap_Army_WDL"",""OPTRE_UNSC_Recon_Helmet"",""OPTRE_UNSC_Recon_Helmet_dp"",""tf_anprc148jem"",""tf_anprc152"",""tf_anprc154"",""MCC_antibiotics"",""MCC_bakedBeans"",""MCC_bandage"",""MCC_battery"",""MCC_bottle_water"",""OPTRE_BR55HB_Scope"",""MCC_butanetorch"",""MCC_canOpener"",""MCC_canteenWater"",""MCC_carBat"",""MCC_cerealbox"",""MCC_wood"",""MCC_ductTape"",""MCC_epipen"",""tf_fadak"",""MCC_firstAidKit"",""MCC_foodcontainer"",""MCC_franta"",""MCC_fuelbot"",""MCC_fuelCan"",""ItemGPS"",""MCC_headTorch"",""OPTRE_M392_Scope"",""OPTRE_M6G_Flashlight"",""OPTRE_M6G_Scope"",""OPTRE_M7_Flashlight"",""OPTRE_M7_Laser"",""OPTRE_M7_Sight"",""OPTRE_M7_silencer"",""OPTRE_M73_SmartLink"",""OPTRE_MA5B_AmmoCounter"",""OPTRE_MA5B_AmmoCounter_NoIS"",""OPTRE_MA5B_Flashlight"",""MCC_matches"",""OPTRE_MedKit"",""tf_microdagr"",""MCC_multiTool"",""MCC_oilcan"",""OPTRE_SRS99_Scope"",""MCC_painkillers"",""tf_pnr1000a"",""MCC_powderedMilk"",""Rangefinder"",""MCC_RedGull"",""tf_rf7800str"",""MCC_rice"",""MCC_salineBag"",""MCC_metalwire"",""MCC_screwdriver"",""MCC_Spirit"",""OPTRE_SRS99_Bipod"",""OPTRE_SRS99_Laser"",""MCC_fruit1"",""MCC_fruit2"",""MCC_bacon"",""MCC_videoProbe"",""ToolKit"",""MCC_can_dented"",""MCC_vitamine"",""MCC_waterpure""],[]],[[""OPTRE_kitbag_rgr_AA"",""OPTRE_ANPRC_515"",""OPTRE_ANPRC_521_Black"",""OPTRE_ANPRC_521_Green"",""OPTRE_kitbag_rgr_AT"",""OPTRE_kitbag_rgr_EXP"",""OPTRE_kitbag_rgr_ENG"",""OPTRE_ILCS_Rucksack_Medical"",""OPTRE_ILCS_Rucksack_Black"",""OPTRE_ILCS_Rucksack_green"",""OPTRE_ILCS_Rucksack_tan"",""OPTRE_ILCS_Rucksack_Black_AT"",""OPTRE_ILCS_Rucksack_Black_EXP"",""OPTRE_ILCS_Rucksack_Black_Pouches"",""OPTRE_ILCS_Rucksack_green_Pouches"",""OPTRE_ILCS_Rucksack_tan_Pouches"",""tf_anarc164"",""tf_anarc210"",""tf_anprc155"",""tf_anprc155_coyote"",""tf_mr3000"",""tf_mr3000_bwmod"",""tf_mr3000_bwmod_tropen"",""tf_mr3000_multicam"",""tf_mr3000_rhs"",""tf_mr6000l"",""tf_rt1523g""],[]]],true]";
 						};
 					};
 				};
 				nAttributes=1;
 			};
 		};
-		class Item38
+		class Item37
 		{
 			dataType="Logic";
 			class PositionInfo
@@ -11394,7 +11377,7 @@ class Mission
 				nAttributes=21;
 			};
 		};
-		class Item39
+		class Item38
 		{
 			dataType="Logic";
 			class PositionInfo
@@ -11427,7 +11410,7 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item40
+		class Item39
 		{
 			dataType="Group";
 			side="West";
@@ -11676,16 +11659,16 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item41
+		class Item40
 		{
 			dataType="Marker";
-			position[]={9791.6885,139.995,10105.398};
+			position[]={9788.6084,139.995,10105.077};
 			name="respawn_west";
 			type="Empty";
 			angle=258.01395;
 			id=5816;
 		};
-		class Item42
+		class Item41
 		{
 			dataType="Group";
 			side="West";
@@ -11806,7 +11789,7 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item43
+		class Item42
 		{
 			dataType="Group";
 			side="West";
@@ -11928,7 +11911,7 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item44
+		class Item43
 		{
 			dataType="Group";
 			side="West";
@@ -12037,7 +12020,7 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item45
+		class Item44
 		{
 			dataType="Group";
 			side="West";
@@ -12146,7 +12129,7 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item46
+		class Item45
 		{
 			dataType="Group";
 			side="West";
