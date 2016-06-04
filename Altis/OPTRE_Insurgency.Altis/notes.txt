@@ -1,0 +1,368 @@
+BMR Insurgency by Jigsor =BMR=
+Original release date 4/29/14
+Official Thread and Change log info:
+http://forums.bistudio.com/showthread.php?181109-BMR-Insurgency
+
+Missions Pack Download:
+https://www.dropbox.com/s/igymq40svvjgh1g/BMR%20Insurgency.zip
+
+
+Official Stable builds:
+
+BMR_Insurgency_v1_44.Altis
+Required mods:
+None
+
+BMR_Insurgency_v1.44.Stratis
+Required mods:
+None
+
+BMR_Insurgency_v1_44.Kunduz
+Required mods:
+-mod=@prkz
+
+BMR_Insurgency_v1.44.Bornholm
+Required mods:
+-mod=@Bornholm
+
+BMR_Insurgency_v1.44.Zargabad
+Required mods:
+-mod=@CBA_A3;@AllInArmaTerrainPack
+
+BMR_Insurgency_v1.44.Takistan
+Required mods:
+-mod=@CBA_A3;@AllInArmaTerrainPack
+
+BMR_Insurgency_v1.44.Fata
+Required mods:
+-mod=@CBA_A3;@AllInArmaTerrainPack;@fata_a3
+
+BMR_Insurgency_v1_44.Sara
+Required mods:
+-mod=@CBA_A3;@CUP_Terrains;@CUP_Sahrani
+
+BMR_Insurgency_v1.44_a3mp.fallujah
+Required mods:
+-mod=@CBA_A3;@A3MP;@a3mp_ap;@fallujah1_2
+
+BMR_Insurgency_v1.44_aia.fallujah
+Required mods:
+-mod=@CBA_A3;@AllInArmaTerrainPack@fallujah1_2
+
+BMR_Insurgency_v1.44.pja305
+Required mods:
+-mod=@CBA_A3;@AllInArmaTerrainPack;@nziwasogo
+
+BMR_Insurgency_v1.44.pja310
+Required mods:
+-mod=@CBA_A3;@AllInArmaTerrainPack;@fsf_al_rayak
+
+BMR_Insurgency_v1_44.Mog
+Required mods:
+-mod=@mog
+
+BMR_Insurgency_v1_44.clafghan
+Required mods:
+-mod=@CBA_A3;@AllInArmaTerrainPack;@Clafghan
+
+
+Optional additional supported mod combinations:
+1.	@african_conflict;@nato_russian_sf_weapons
+2.	@caf_ag1.5
+3.	@rhs_afrf3;@rhs_usf3;@leights_opfor
+4.	@mec;@cup;@asdg_jr;@rds;@rds_tank;@cha_mi24
+5.	@evw;@rds
+6.	@rhs_afrf3
+7.	@iraqi_syrian_conflict;@cup_weapons;@mas_nato_rus_sf_veh;@rhs_afrf3;@rhs_usf3;
+
+Recommended additional mod for head dress variation: @hiddenidentitypack
+Recommended additional mods for AI behavior: @asr_ai3
+
+12/4/15
+BMR_Insurgency_v1.44
+Fixed: Updated Iraqi Syrian Conflict V.5 mod support. Requirements : @iraqi_syrian_conflict;@cup_weapons;@mas_nato_rus_sf_veh;@rhs_afrf3;@rhs_usf3
+Fixed: Was possible for medic's placeable sandbag to be placed underground and loose ability to remove and create another.
+Fixed: Bail from chopper not available after CBA update.
+Fixed: TAW view distance popup error on first use. Started with A3 patch 1.50.
+Fixed: ATM Halo Bad Vehicle Type popup error occurred when HALO jumper did not have a backpack.
+Fixed: Group leader of blufor AI freezing when his AI halo.
+Fixed: BTC revive flickering message who is near to revive.
+Fixed: Recruited AI now can be transported with with Evac Heli.
+Fixed: Blufor's deployed farp marker was visible to opfor when JIP.
+Fixed: On some terrains bug prevents UGV engine from starting after UAV operator calls in UGV air drop.
+Fixed: Fast Rope from choppers.
+Added: Support for 1 headless client. If HC crashes/disconnects then all remaining spawned grid AI will reside on server. If Headless Client JIP or rejoins then future spawned grid AI will reside on Headless Client.
+Added: Mogadishu Map version.
+Added: Clafghan Map version.
+Added: Helipad lights on blufor and opfor bases.
+Added: Unique layer to killed info message when playing in multiplayer.
+Added: Some 1x and 2x optics to Op4 supply crate.
+Added: additional Server cleanup/maintenance performed server has 0 players.
+Added: New mission - Clear Road Block.
+Added: Measure to prevent ammo cache from getting buried/hidden by building ruins before cache is destroyed.
+Added: ACE parachute HALO compatibility.
+Added: Mission ends for player exceeding team kill punishment limiter defined by variable BTC_tk_last_warning in INS_Definitions.sqm. Default : 3
+Added: Lobby parameter to disable play as Opfor. If disabled, Mission will end for Opfor player and will be asked to join a Blufor slot.
+Added: Lobby parameter to disable audible friendly AI radio.(adversely disables missile lock tone).
+Added: Lobby parameter to enable scripted poisonous gas grenades. Yellow hand and GL smoke grenades are Toxic. For immunity wear A3 Heli Crew or Pilot Helmet. Also supports gas masks from Hidden Identity Pack v2 and NATO SF and Russian Spetsnaz Weapons mods.
+Added: Clause to AI Halo which delays drop start until recruitment que is empty and clause to exclude AI in vehicles.
+Added: UAV service repair/refuel/rearm on marker with description "Fixed Wing Repair".
+Added: Ability/action to transfer loadouts to other players and recruited AI at blufor base main ammo box.
+Added: Russian localization translation. Thanks to macmillan11.
+Added: German localization translation. Thanks to Mr.Ripley.
+Added: Functionality to delay deactivation of zones when player leaves or dies in trigger area. Modifiable by lobby parameter Thanks to Mr.Ripley and son.
+Added: Functionality to limit the number of grid zones simultaneously activated. Modifiable through lobby parameter. Zones with completed activation before limiter was reached will stay activated if using deactivation delay.
+Change: Default maximum infantry per zone doubled. Higher concentration within fewer zones possible. With the new simultaneous zone limiter it is possible to avoid bog or crash because of to many AI on server or headless client.
+Change: Exchanged an Ammo Bearer slot for additional Engineer slot. Multiple engineers supported now though only one FARP can exist.
+Change: Decreased intensity of ambient combat sounds.
+Change: Removed VA Preloader.
+Change: Removed all Arsenal actions for opfor players.
+Change: Improved less desync on player JIP.
+Change: Removed lightning bolt on intro.
+Change: Increased Font size of mission added actions on Flag Pole, Main Ammo Crates and FARP.
+Change: Removed original music clip. Ending now plays nostalgic native quote videos and displays intro banner image to reduce mission size.
+Change: Suicide bomber average recurrence frequency slightly reduced.
+Change: Reduced network traffic in handling of JIP intel actions.
+Change: Opfor no longer receive score for picking up intel.
+Change: Once all objective missions are complete objective pool is recycled.
+Change: Replaced option to disable fatige with option to disable new stamina sytem.
+Change: Replaced the Sahrani version dependancies from @AllInArmaTerrainPack;@smd_a3 to @CUP_Terrains;@CUP_Sahrani
+
+7/24/2015
+BMR_Insurgency_v1.43
+Added: Bornholm version.
+Added: F.S.F. Al Rayak version.
+Added: Flip vehicle ability/action to FARP.
+Added: AI Halo ability/action to blufor base flag pole.
+Added: Status hud and digital heading are automatically reactivated on respawn if they were activated before death respectively.
+Added: "Save Loadout" action now uses native BIS functions and generates confirmation sound.
+Added: Optional Bail from chopper ability/Extended EventHandler. Requires CBA mod
+Added: Support for Iraqi Syrian Conflict mod.
+Added: Support for Leight's Opfor Pack mod.
+Added: Functionality to restrict aircraft piloting to only specified classes in array INS_PlayerPilot located in INS_definitions.sqf. (Default no restriction)
+Added: Boats now have push action as recourse for stuck/beached craft.
+Added: Stand alone MHQ system.
+Added: Recruited AI skills function.
+Added: Fog effect to objective areas before dawn. (Requires lobby parameter "Environment effects" Enabled.)
+Added: Civilian vehicles from supported mod sets.
+Added: Began adding string-table multi-language support for in game messages. So Far English, French, Russian and Spanish added (WIP).
+Added: Suicide bomber script will try to recruit/draft nearby civilian, has chance of deadMan switch, and will have grenade in his clothes as bomber evidence. Thanks to SupahG33K for these additions.
+Fixed: Stringtable.xml errors.
+Fixed: Virtual Arsenal quick loadout error on MHQs.
+Fixed: FARP deployment related script errors.
+Fixed: Assigned intro banner unique rsclayer to avoid infinite black screen.
+Fixed: Exploding choppers on pilot seat entry again.
+Fixed: Team Kill punishment option is now working.
+Fixed: Helicopter extraction will now fly away after drop off. Improved repeatability.
+Fixed: Possible CAS called aircraft never completes and does not delete.
+Change: Replaced my version of Ambient Combat Sound with Mickey74's improved Ambient battle sounds script version.
+Change: Replaced aeroson's group manager with BIS's group manager.
+Change: Removed support for discontinued Middle Eastern Conflict mod.(WIP)
+Change: Replaced Vehicle System (vSys) with ASOR Vehicle Selector v1.4 by Lecks which will spawn moded and unmoded vehicles (used for vehicle rewards).
+Change: All map click functions now use Stacked EventHandlers for universal mod compatibility.
+Change: Capture and hold task will dynamically extend hold timer based on number of Blufor defenders present within 200 meters of objective once captured.
+Change: Removed recruited AI radio chatter.
+Change: Re-added Virtual Arsenal Preloader.
+Change: Less chance a hunting chopper will stop and hover near player position without engaging.
+Change: Several minor script optimizations.
+
+4/29/2015
+BMR_Insurgency_v1.42
+Fixed: Takistan version missing digital heading script update.
+Fixed: Possibility for mission stuck on black screen.
+Added: Mobile civilians will no longer spawn on Blufor base.
+
+4/24/2015
+BMR_Insurgency_v1.4
+Added: Altis, Fata, Kunduz, and SMD Sahrani versions.
+Added: Virtual Arsenal Preloader
+Added: Virtual Arsenal quick loadout.
+Added: Static Weather Overcast options.
+Added: Support for "Hamas and Hezbollah" factions from MEC mod.
+Added: "Save Loadout" action to main Blufor ammo box. This will restore loadout on respawn/revive.
+Added: More zones to coastlines in N'ziwasogo version.
+Added: Marksman DLC content.
+Fixed: @MEC related errors. Removed all "MEC_XXX_RPG7Grenadier" units. Missing rpg.p3d caused popup errors.
+Fixed: Digital Heading activation only requires 1 button press now after respawn/revive.
+Fixed: High bandwidth usage and latency for all players when JIP occured.
+Fixed: Exploding helis upon driver entry on all helis.
+Fixed: Civilians can no longer trigger mine filed objective failure.
+Change: Default RHS Opfor player loadout has 9 rifle mags.
+Cahnge: Removed useless "Load Cargo" action from Opfor players.
+Change: Delivery objective will utilize anti-air vehicles from one of the optionally activated mod sets.
+Change: Removed VAS.
+
+3/17/2015
+BMR_Insurgency_v1.3
+Added: Lobby parameter "Maximum possible intel per occupied grid zone ratio" Possible ratios are "1 intel : 2 zones" to "1 intel : 6 zones".
+Added: Mine Detector Script by Lala14.
+Added: Modified-Fatigue by Quiksilver selectable in lobby parameter "Fatigue System".
+Added: Recruited Ai will now revive player if at least one other player exists in group and BTC Quick Revive is enabled in lobby parameters.
+Added: Rocket munitions fire from exploded ammo cache in random directions.
+Added: Improved handling of intel actions for JIP.
+Fixed: Start time lobby parameter was broken in last version when used in combination with Random Weather.
+Fixed: Opfor intro would fade to black screen until first respawn.
+Fixed: Intel generation script hang. Added redundant fail safes for valid and compatible building positions.
+Fixed: Exploding AH-99 Blackfoot on respawn/entry in Stratis base.
+Change: CAS aircraft from Buzzard to Wipeout.
+Change: Shortened que time length in AI recruitment.
+Change: Added RHS_A10 to air field when @rhs_usf3 mod detected and air field is used by blufor (defaults to Wipeout as in previous version).
+Change: Intel object count is dynamically adjusted upon Ammo Cache spawning based on uncaptured zones and maximum intel lobby param ratio.
+
+2/5/2015
+BMR_Insurgency_v1.1
+Fixed: Bugs in implementation of optional BTC Quick Revive.
+Fixed: On hilly terrain like Stratis it was possible for objectives to not find a suitable clear area.
+Fixed: Could not Disable AI recruitment.
+Changed: replaced Bon's Infantry Recruitment background UI graphic with transparent black box reducing mission size.
+
+1/31/2015
+BMR_Insurgency_v1.0
+Added: Stratis Version. No mods required.
+Added: Ability to save loadout to Op4's weapons crate.
+Added: Optional BTC Quick Revive Support.
+Added: MHQ option in Revive Sytem MP lobby parameters.
+Added: Partial fix for AGM explosives compatibility.
+Added: Bon's Infantry Recruitment Redux -- by Moser.
+Change: Vehicle Air Drop Reward position uses new mapclick function instead of player position.
+Change: Delivery mission to make compatible with no MHQ in revive system.
+Change: Blufor Base/Zone protection from BIS module to a more consistent scripted function. All enemy intruders are intrinsically killed.
+Change: Assigned Status Hud a toggle button in UI.
+Change: Add MP lobby Parameter Logistics.
+Change: Updated real_weather.sqf v1.2 to v1.3
+Change: Updated MEC to support CUP instead of Massi's weapons
+Change: Consolidated heli paint functions into one "paint_heli_fnc" based on terrain.
+Change: Many minor optimizations to scripts.
+Fixed: VAS weapons blacked out. Added VAS support for AGM items.
+Fixed: Script error in deployOpforMHQ.sqf.
+Fixed: Respawned ammo cache debug marker.
+Fixed: Some intel didn't have grab action.
+Fixed: Heli Extraction was broken 1 or 2 versions previous.
+
+BMR_Insurgency_v0_99
+Fixed :Clean up errors in objectives.
+Changed: some enemy presence default lobby parameters for each map.
+
+BMR_Insurgency_v0_98
+Added: CAF Agressors support.
+Added: RHS support.
+Added: Taliban and ISIS factions from Middle Eastern Concflict mod.
+Added: Consolidated mod support into 1 version per island. (Choose mod support in parameter "Opposing Army/Mod Initialization")
+Added: New mission Destroy mortar squad. Good Luck!
+Added: New mission Destroy armed convoy.
+Added: New mission Capture n Hold.
+Added: Ambient combat sounds 3d.
+Added: CH-67 Huron to base and Mi-290 Taron to AI scripts.
+Added: New objects from Helicoptor DLC.
+Added: Flares to little birds.
+Added: Option in lobby parameter "Revive system" allowing only medics to revive.
+Added: Lobby parameter "Grass Option None" : "Disable", "Enable" for TAW View Distance.
+Added: ZBE_Cache v4.4b by zorrobyte. Adds AI caching to Objective infantry.
+Added: CH67 Huron to Logistics script.
+Added: Better Joint Rail mod support by Robalo to VAS.
+Added: "Restore Loadout" action to Op4_MHQ
+Added: Damage protection to Op4 weapon crates.
+Fixed: Buged wheels stuck in ground in supply convoy mission.
+Fixed: Suicide bomber script rpt spam.
+Fixed: EOS nvg_gogles error. Factions now spawn with correct Night Vision Goggles.
+Fixed: Possible script hang in delivery mission.
+Change: Optimized many script operations using newer commands pushBack and isEqualTo.
+Change: Initialization order of tasks/ammo cache scripts.
+Change: Opfor AAF players have magnified scope "optic_Hamr" on default loadout.
+Change: Updated TAW view Distance script to v1.4.
+Change: Advanced flight controls set to options based.
+Change: Removed Opfor vehicle reward for ammo cache destroyed.
+Change: Adjusted layout of Lobby MP Parameters.
+Change: Updated MEC mod support to v0172.
+Change: Aircraft no longer cause zones to spawn.
+
+BMR_Insurgency_v0_97
+Added: Fallujah mod variants.
+Added: Opfor players can deploy MHQ truck which will set CSAT ammo, weapons and support boxes at OpforMHQ location.
+Added: New Convoy mission.
+Summary: Blufor must destroy all 4 support vehicles and their crew.
+Added: modified BIS_fnc_taskPatrol "Veh_taskPatrol_mod" function code by Demonized to fix some vehicle bugs not moving when speed or behavior was not defined for each waypoint.
+Added: based protection to Blufor bases. Opfor players have 10 seconds to leave the zone or will be killed.
+Added: loby parameter to disable environmental effects (ambient life + sound) for minor performance increase.
+Added: function to set array of markers to alpha 0 for those created/moved by opposing side.
+Added: Virtual Arsenal and VAS actions to player in Debug mode.
+Added: remove_charge function code by Iceman. Removes mine base from Ammo cache object.
+Added: ammo cache Bo_Air_LGB explosion effect from original Insurgency by Pogoman & Fireball & Kol9yN.
+Fixed: Map click teleport in Debug mode.
+Fixed: Respawn and spectate button moved down away from screen edge. Should resolve issue for laptop users who can't see the buttons.
+Fixed: Starting time parameter now working with both weather scripts.
+Fixed: Buttons and dialog text on Halo interface.
+Fixed: Intel and ammo cache stuck in floors and walls of buildings.
+Fixed: Script errors in rewarded vehicle paradrop.
+Fixed: Cargo ramp animation error on Mohawks used in Delivery mission. Error was due to BIS command update.
+Change: Merged all OpenMe.sqf variant scripts from EOS to one file in effort to reduce mission and add easier modding flexibility.
+Change: Suicide bomber target tracking to realtime tracking.
+Change: Doubled number of maximum foot civilians spawned. Previous max number equivilant can be achieved by setting foot civilian probability lobby parameter
+to 50%.
+Change: Streamlined Opfor player default loadout script.
+Change: TK punishment time increased to 60 seconds. Added sound fx.
+Change: minor script optimization in handling of moded/unmoded factions and classnames
+Change: spectate camera stutter removed.
+
+BMR_Insurgency_v0_96
+Added: New mission Delivery.
+Summary: Blufor must load supply box into MHQ_3 Mohawk and deliver to task marker via air drop or landed unload without dying or loosing MHQ_3.
+Added: UI for view settings and digital heading and removed player actions handling this. Thanks to Dirty Haz.
+Added: Enemy Armor probability lobby parameter.
+Added: Vehicle rewarded action para dropped to player who destroys ammo cache.
+Added: SimpleCrateRefill to ammo boxes at blufor base.
+Added: black listing of objects to prevent moving by logistics script. Array name INS_log_blacklist. Ammo boxes, flag poles at base etc. can no longer be moved.
+Added: A3 music to intro. Don't forget to make sure music is turned up in audio settings.
+Added: friendly player markers.
+Added: Marine Dock to N'zwasogo version.
+Added: More zones to N'Ziwasogo Version.
+Added: Infantry probability parameter.
+Takistan and Zargabad versions ported to AllInArmaTerrainPack.
+Fixed infinite loop in Heli Extraction
+Fixed: removed unknown file type in mission. Was causing mission not to run on servers utilizing these security measures in server.cfg allowedLoadFileExtensions[] and allowedPreprocessFileExtensions[]".
+Change: Extended Suicide Bomber spawn distance.
+Change: Few minor performance tweaks.
+Change: All UAVs are useable now.
+
+BMR_Insurgency_v0_95
+Fixed: error in air patrol functions change in v0_94 causing server crash.
+Fixed: bug -- it was occasionally possible for tasks not to start on mission start.
+Added: Anti Blufor base sabotage mines and explosive removal
+Added: Drag Body Script v1.2 by Bangabob added//needs testing and feed back
+Added: flashlights to Enemy AI weapons. They are more engaging at night now.
+Added: mines and explosives to Opfor players
+
+BMR_Insurgency_v0_94
+Added: Takistan version
+Added: new mission Mine Field.
+Summary: Blufor deactivate or detonate random number of mines between 5 -15 in cross hatched marked mine field. If any blufor in minefield dies opfor/resistance wins objective.
+Added: visual effects to Cut Power mission.
+Added: Bullet Cam option for Marksman/Spotter Sniper classes. Thanks to Killzonekid
+Added: Enemy AI spawn distance parameter.
+Added: debugging markers for air patrol and objective infantry.
+Fixed: Ending.
+Fixed: add diary entry error in zlt fastrope.
+Fixed: Performance monitor now accessible by any local server host.
+Change: Reworked base furniture in vehicle service point.
+Change: Converted all playable Blufor units in N'ziwasogo to Masi USMC wooded cammo variants.
+
+BMR_Insurgency_v0_93
+Added: N'Ziwasogo version
+Added: Two playable OpFor slots.
+Added: Opfor players respawn 250-500 meters of Blufor Players if respawn at base selected.
+Added: Opfor players have 1 mobile HQ and are kited based on Opfor faction selected in parameters.
+Added: Ending added with original music.
+Added: New objective Cut Power with sound effects.
+Added: Air raid siren on blufor base when opfor or resistance near.
+Summary: Destroy High Voltage Tower to turn off all city lights within 1000 meter radius (good affect at night)
+Fixed: Rescue the downed pilot mission.
+Change: Removed BTC revive restore player loadout because of bug not restoring any rockets to backpack. As a result, players now respawn with full loadout if "Load on Respawn" in VAS chosen.
+
+BMR_Insurgency_v0_91
+New feature include:
+Civilians spawn in buildings and nearby buildings.
+Civilians are not Vanilla if you choose moded op4 faction. They will be African Masi instead.
+1. Parameter for Enabling/Disabling Mobile Civilians.
+2. Parameter for Enabling/Disabling Foot Civilians.
+3. Parameter for adjusting spawn chance of foot Civilians.
+As is now, the civilian count is very low but still very noticeable.
