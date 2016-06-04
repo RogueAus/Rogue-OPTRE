@@ -8,10 +8,10 @@ while {alive player} do {
     player removeAction _unitholsteraction;
   };
   player removeAction _unitholsteraction;
-  _unitequipprimaryactiontext = "Weapon " + getText (configfile >> "CfgWeapons" >> primaryWeapon player >> "displayName");
+  /*_unitequipprimaryactiontext = "Weapon " + getText (configfile >> "CfgWeapons" >> primaryWeapon player >> "displayName");
    _unitequipprimaryaction = player addAction [_unitequipprimaryactiontext,{
      player action ["SWITCHWEAPON",player,player,0];
      },nil,6,false,true];
    waitUntil {currentWeapon player != "" or primaryWeapon player == ""};
-   player removeAction _unitequipprimaryaction;
+   player removeAction _unitequipprimaryaction;*/
 };
