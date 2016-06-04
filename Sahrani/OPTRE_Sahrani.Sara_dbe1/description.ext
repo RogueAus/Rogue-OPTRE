@@ -50,8 +50,11 @@ corpseRemovalMaxTime = 120;								// Max time before removal
 //------------------------- Includes / Functions
 
 #include "scripts\vehicle\crew\common.hpp"  			// vehicle crew hud
-#include "scripts\vehicle\crew\namesleft.hpp"	// Occupants HUD for vehicles
 
+class RscTitles
+{
+	#include "scripts\vehicle\crew\namesleft.hpp"	// Occupants HUD for vehicles
+};
 
 /*class CfgSounds
 {
