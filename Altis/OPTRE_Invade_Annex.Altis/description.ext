@@ -1,8 +1,8 @@
 //------------------------- On Load
 
 author = DGAus Dev Team;					// Visible when loading mission
-onLoadName = "Operation: Trebuchet;Invade & Annex";						// Visible when loading mission
-OnLoadMission = "Welcome to Division Gaming Australia's I&A Server... Join us on Teamspeak at DGAus.teamspeak3.com";
+onLoadName = "OpTre: Invade & Annex";						// Visible when loading mission
+OnLoadMission = "Welcome to Division Gaming Australia's Invade and Annex Server... Join us on Teamspeak at DGAus.teamspeak3.com";
 loadScreen = "media\images\loading.jpg";				// Visible when loading mission
 overviewPicture = "media\images\loading.jpg";			// Visible when selecting mission	
 
