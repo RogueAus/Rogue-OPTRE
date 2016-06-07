@@ -2,19 +2,19 @@
 // Since then been tweaked by many hands!
 // Notable contributors: chucky [allFPS], Quiksilver.
 
-_pilots = ["B_Helipilot_F"];
-_aircraft_nocopilot = ["B_Heli_Transport_01_camo_F", "B_Heli_Transport_01_F", "I_Heli_Transport_02_F", "O_Heli_Light_02_F", "O_Heli_Light_02_unarmed_F", "B_Heli_Light_01_armed_F","B_Heli_Transport_03_F"];
+_pilots = ["OPTRE_UNSC_Airforce_Soldier_Airman"];
+_aircraft_nocopilot = ["OPTRE_Pelican_armed_green","OPTRE_Pelican_armed_tan","OPTRE_Pelican_armed_black","OPTRE_Pelican_armed_Marine","OPTRE_Pelican_unarmed_green","OPTRE_Pelican_unarmed_tan","OPTRE_Pelican_unarmed_black","OPTRE_Pelican_unarmed_Marine"];
 
 waitUntil {player == player};
 
 _iampilot = ({typeOf player == _x} count _pilots) > 0;
 
-/* Remove comments and insert UIDs into the whitelist to exempt individuals from this script
+//Remove comments and insert UIDs into the whitelist to exempt individuals from this script
 _uid = getPlayerUID player;
-_whitelist = ["76561198029008449","76561198058389301","76561198085765221","76561198022163272","76561198039531022","76561198080680196","76561198001522951","76561198054120913","76561198043550034","76561198023528482","76561197961923793","76561198079640023","76561197998355936","76561197983658369","76561198086257618","76561197980032453"];
+_whitelist = ["76561198059693747"/*Rogue*/,"76561198160246849"/*Machine*/];
 
 if (_uid in _whitelist) exitWith {};
-*/
+
 
 while { true } do {
 	_oldvehicle = vehicle player;
