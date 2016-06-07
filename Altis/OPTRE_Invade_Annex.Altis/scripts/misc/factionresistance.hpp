@@ -17,20 +17,14 @@ __________________________________________________*/
 
 class ind {
 	units[] = {
-		"I_Soldier_A_F",
-		"I_Soldier_AR_F",
-		"I_medic_F",
-		"I_engineer_F",
-		"I_Soldier_exp_F",
-		"I_Soldier_GL_F",
-		"I_Soldier_M_F",
-		"I_Soldier_AA_F",
-		"I_Soldier_AT_F",
-		"I_Soldier_repair_F",
-		"I_soldier_F",
-		"I_Soldier_LAT_F",
-		"I_Soldier_lite_F",
-		"I_Soldier_SL_F",
-		"I_Soldier_TL_F"
+		"OPTRE_Ins_ER_Terrorist",
+		"OPTRE_Ins_ER_Farmer",
+		"OPTRE_Ins_ER_Deserter_GL",
+		"OPTRE_Ins_ER_Insurgent_BR",
+		"OPTRE_Ins_ER_Warlord",
+		"OPTRE_Ins_ER_MAdvisor",
+		"OPTRE_Ins_ER_Militia_MG",
+		"OPTRE_Ins_ER_Rebel_AT",
+		"OPTRE_Ins_ER_Guerilla_AR"
 	};
 };

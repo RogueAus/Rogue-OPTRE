@@ -1,6 +1,6 @@
 
 	_building = _this select 0;
-	_faction = "OPF_F";
+	_faction = "OPTRE_Ins";
 	_coef = 1;
 
 	BIS_getRelPos = {
@@ -176,7 +176,7 @@
 
 	_newGrp = createGroup EAST;
 
-	_units = ["O_Soldier_GL_F", "O_Soldier_AR_F"];
+	_units = ["OPTRE_Ins_URF_Grenadier", "OPTRE_Ins_URF_Autorifleman"];
 
 	{
 		_pos =  [_building, _x select 1, (_x select 0) + direction _building] call BIS_fnc_relPos;
