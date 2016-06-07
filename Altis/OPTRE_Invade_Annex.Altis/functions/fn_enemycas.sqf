@@ -15,7 +15,7 @@ ______________________________________________________*/
 
 private ["_aoPos","_spawnPos","_jetSelect","_casArray","_jetLimit","_jetPilot","_jetActual","_new"];
 
-_casArray = ["O_Plane_CAS_02_F","I_Plane_Fighter_03_AA_F"];
+_casArray = ["OPTRE_mako_drone_CAS_ins"];
 
 _jetLimit = 2;
 	
@@ -56,7 +56,7 @@ if ((count enemyCasArray) < _jetLimit) then {
 		private ["_jetActual","_jetPos","_targetList"];
 		_jetActual = _this select 0;
 		_jetPilot = _this select 1;
-		showNotification = ["EnemyJet","Enemy jet approaching!"]; publicVariable "showNotification";
+		showNotification = ["EnemyJet","Enemy drone approaching!"]; publicVariable "showNotification";
 		while {(alive _jetActual)} do {
 			_jetActual setVehicleAmmo 1;
 			_jetActual flyInHeight (200 + (random 850));
