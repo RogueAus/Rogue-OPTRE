@@ -1,0 +1,24 @@
+VARIABLE switchmove "ANIMATION";  VARIABLE disableAI "ANIM";
+//first scene
+//hostages
+Acts_Abuse_abusing
+Acts_Abuse_abuser
+Acts_AidlPsitMstpSsurWnonDnon01
+Acts_AidlPsitMstpSsurWnonDnon02
+Acts_AidlPsitMstpSsurWnonDnon03
+Acts_AidlPsitMstpSsurWnonDnon04
+Acts_AidlPsitMstpSsurWnonDnon05
+-guards
+AidlPercMstpSrasWrflDnon_G01
+AidlPercMstpSrasWrflDnon_G04
+//
+//testing something
+AmovPercMrunSrasWrflDf_AmovPercMrunSrasWrflDfl - 0.652s
+AND
+AmovPercMrunSrasWrflDfl_AmovPercMrunSrasWrflDf - 0.918s
+OR
+AmovPercMrunSrasWrflDfl_AmovPercMrunSrasWrflDfr - 0.918s
+AND
+AmovPercMrunSrasWrflDfr_AmovPercMrunSrasWrflDf - 0.652
+OR
+AmovPercMrunSrasWrflDfr_AmovPercMrunSrasWrflDfl - 1.078
