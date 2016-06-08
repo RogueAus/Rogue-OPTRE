@@ -10,7 +10,7 @@ BACO_ammoSuppAvail = FALSE; publicVariable "BACO_ammoSuppAvail";
 
 _heli = _this select 0;
 _crateType =  "B_supplyCrate_F";		//ammocrate class for blufor, feel free to change to whichever box you desire
-_reloadtime = 960;  						// time before next ammo drop is available to use, default 600 or 480
+_reloadtime = 600;  						// time before next ammo drop is available to use, default 600 or 480
 
 //--------------------------------------------------------- MEAT AND POTATOES
 
