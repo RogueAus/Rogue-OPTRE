@@ -12,24 +12,104 @@ _box = _this select 0;
 [
 	_box,
 	[
-		"B_Kitbag_Base","B_Kitbag_mcamo","B_GMG_01_weapon_F","B_HMG_01_A_weapon_F","B_GMG_01_A_weapon_F","B_UAV_01_backpack_F","I_UAV_01_backpack_F","O_UAV_01_backpack_F","B_HMG_01_high_weapon_F","B_GMG_01_high_weapon_F","B_HMG_01_A_high_weapon_F","B_GMG_01_A_high_weapon_F","B_HMG_01_support_F","B_HMG_01_support_high_F","B_AT_01_weapon_F","B_AA_01_weapon_F","B_Mortar_01_weapon_F","B_Mortar_01_support_F","B_AssaultPack_dgtl","B_AssaultPack_rgr","B_AssaultPack_sgg","B_AssaultPack_Blk","B_AssaultPack_cBr","B_AssaultPack_mcamo","B_AssaultPack_ocamo","B_AssaultPack_kerry","B_","Bergen_Blk","B_","Bergen_mcamo","B_","Bergen_rgr","B_","Bergen_sgg","B_","BergenC_Blu","B_","BergenC_grn","B_","BergenC_red","B_Carryall_cBr","B_Carryall_oli","B_Carryall_khk","B_Carryall_mcamo","B_Carryall_ocamo","B_Carryall_oucamo","B_FieldPack_cBr","B_FieldPack_khk","B_FieldPack_ocamo","B_FieldPack_oucamo","B_FieldPack_oli","B_FieldPack_Blk","B_Kit","Bag_mcamo","B_Kit","Bag_sgg","B_Kit","Bag_cBr","B_Kit","Bag_rgr","B_OutdoorPack_Blk","B_OutdoorPack_Blu","B_OutdoorPack_tan","B_TacticalPack_Blk","B_TacticalPack_mcamo","B_TacticalPack_ocamo","B_TacticalPack_oli","B_TacticalPack_rgr","B_Parachute"
-	],
+	"OPTRE_kitbag_rgr_AA",
+	"OPTRE_ANPRC_515",
+	"OPTRE_ANPRC_521_Black",
+	"OPTRE_ANPRC_521_Green",
+	"OPTRE_kitbag_rgr_AT",
+	"OPTRE_kitbag_rgr_EXP",
+	"OPTRE_kitbag_rgr_ENG",
+	"OPTRE_ILCS_Rucksack_Medical",
+	"OPTRE_ILCS_Rucksack_Black",
+	"OPTRE_ILCS_Rucksack_Green",
+	"OPTRE_ILCS_Rucksack_Tan",
+	"OPTRE_ILCS_Rucksack_Black_AT",
+	"OPTRE_ILCS_Rucksack_Black_Pouches",
+	"OPTRE_ILCS_Rucksack_Green_Pouches",
+	"OPTRE_ILCS_Rucksack_Tan_Pouches"
+],
 	true
 ] call BIS_fnc_addVirtualBackpackCargo;
 	
 [
 	_box,
 	[
-		"1Rnd_HE_Grenade_shell","UGL_FlareWhite_F","UGL_FlareGreen_F","UGL_FlareRed_F","UGL_FlareYellow_F","UGL_FlareCIR_F","1Rnd_Smoke_Grenade_shell","1Rnd_SmokeRed_Grenade_shell","1Rnd_SmokeGreen_Grenade_shell","1Rnd_SmokeYellow_Grenade_shell","1Rnd_SmokePurple_Grenade_shell","1Rnd_SmokeBlue_Grenade_shell","1Rnd_SmokeOrange_Grenade_shell","3Rnd_HE_Grenade_shell","3Rnd_UGL_FlareWhite_F","3Rnd_UGL_FlareGreen_F","3Rnd_UGL_FlareRed_F","3Rnd_UGL_FlareYellow_F","3Rnd_UGL_FlareCIR_F","3Rnd_Smoke_Grenade_shell","3Rnd_SmokeRed_Grenade_shell","3Rnd_SmokeGreen_Grenade_shell","3Rnd_SmokeYellow_Grenade_shell","3Rnd_SmokePurple_Grenade_shell","3Rnd_SmokeBlue_Grenade_shell","3Rnd_SmokeOrange_Grenade_shell","HandGrenade","MiniGrenade","SmokeShell","SmokeShellYellow","SmokeShellGreen","SmokeShellRed","SmokeShellPurple","SmokeShellOrange","SmokeShellBlue","Chemlight_green","Chemlight_red","Chemlight_yellow","Chemlight_blue","B_IR_Grenade","DemoCharge_Remote_Mag","SatchelCharge_Remote_Mag","ATMine_Range_Mag","ClaymoreDirectionalMine_Remote_Mag","APERSMine_Range_Mag","APERSBoundingMine_Range_Mag","SLAMDirectionalMine_Wire_Mag","APERSTripMine_Wire_Mag","Laserbatteries"
-	],
+	//Mags
+	"OPTRE_12Rnd_127x40_Mag",//M6C Handgun Magazine
+	"OPTRE_16Rnd_127x40_Mag",//M6C Handgun Magazine
+	"OPTRE_8Rnd_127x40_Mag",//M6G Magnum Magazine
+	"OPTRE_8Rnd_127x40_Mag_Tracer",//M6G Magnum Magazine
+	"OPTRE_8Rnd_127x40_AP_Mag",//M6G Magnum Magazine
+	"OPTRE_60Rnd_5x23mm_Mag",//M7 SMG Magazine
+	"OPTRE_60Rnd_5x23mm_Mag_tracer",//M7 SMG Magazine
+	"OPTRE_48Rnd_5x23mm_Mag",//M7 SMG Magazine
+	"OPTRE_48Rnd_5x23mm_Mag_tracer",//M7 SMG Magazine
+	"OPTRE_48Rnd_5x23mm_JHP_Mag",//M7 SMG Magazine
+	"OPTRE_48Rnd_5x23mm_FMJ_Mag",//M7 SMG Magazine
+	"OPTRE_36Rnd_95x40_Mag",//Battle Rifle Magazine
+	"OPTRE_36Rnd_95x40_Mag_Tracer",//Battle Rifle Magazine
+	"OPTRE_15Rnd_762x51_Mag",//M392 DMR Magazine
+	"OPTRE_15Rnd_762x51_Mag_Tracer",//M392 DMR Magazine
+	"OPTRE_6Rnd_8Gauge_Pellets",//M45 Shotgun Magazine
+	"OPTRE_6Rnd_8Gauge_Slugs",//M45 Shotgun Magazine
+	"OPTRE_12Rnd_8Gauge_Pellets",//M45 Semi-Auto/Combat Magazine
+	"OPTRE_12Rnd_8Gauge_Slugs",//M45 Semi-Auto/Combat Magazine
+	"OPTRE_100Rnd_95x40_Box",//M73 LMG Magazine
+	"OPTRE_100Rnd_95x40_Box_Tracer",//M73 LMG Magazine
+	"OPTRE_200Rnd_95x40_Box",//M73 LMG Magazine
+	"OPTRE_200Rnd_95x40_Box_Tracer",//M73 LMG Magazine
+	"OPTRE_60Rnd_762x51_Mag",//MA5B Assault Rifle Magazine
+	"OPTRE_60Rnd_762x51_Mag_Tracer",//MA5B Assault Rifle Magazine
+	"OPTRE_4Rnd_145x114_APFSDS_Mag",//SRS99D Sniper Rifle Magazine
+	"OPTRE_4Rnd_145x114_HVAP_Mag",//SRS99D Sniper Rifle Magazine
+	"OPTRE_4Rnd_145x114_HEDP_Mag",//SRS99D Sniper Rifle Magazine
+	"OPTRE_M41_Twin_HEAT",//M41 Rocket Launcher Magazine
+	"OPTRE_M41_Twin_HEAP",//M41 Rocket Launcher Magazine
+	//Grenades
+	"OPTRE_M9_Frag",//M9 Frag Grenade
+	"OPTRE_M8_Flare",//M8 Flare Grenade
+	"OPTRE_M2_Smoke",//M3 Smoke Grenade
+	"OPTRE_M2_Smoke_Red",//M3 Smoke Grenade - Red
+	"OPTRE_M2_Smoke_Blue",//M3 Smoke Grenade - Blue
+	"OPTRE_M2_Smoke_Green",//M3 Smoke Grenade - Green
+	"OPTRE_M2_Smoke_Orange",//M3 Smoke Grenade - Orange
+	"OPTRE_M2_Smoke_Purple",//M3 Smoke Grenade - Purple
+	"OPTRE_M2_Smoke_Yellow",//M3 Smoke Grenade - Yellow
+	"1Rnd_HE_Grenade_shell",//MA5B Assault Rifle Magazine
+	"UGL_FlareWhite_F",//MA5B Assault Rifle Grenade
+	"UGL_FlareGreen_F",//MA5B Assault Rifle Grenade
+	"UGL_FlareRed_F",//MA5B Assault Rifle Grenade
+	"UGL_FlareYellow_F",//MA5B Assault Rifle Grenade
+	"UGL_FlareCIR_F",//MA5B Assault Rifle Grenade
+	"1Rnd_Smoke_Grenade_shell",//MA5B Assault Rifle Grenade
+	"1Rnd_SmokeRed_Grenade_shell",//MA5B Assault Rifle Grenade
+	"1Rnd_SmokeGreen_Grenade_shell",//MA5B Assault Rifle Grenade
+	"1Rnd_SmokeYellow_Grenade_shell",//MA5B Assault Rifle Grenade
+	"1Rnd_SmokePurple_Grenade_shell",//MA5B Assault Rifle Grenade
+	"1Rnd_SmokeBlue_Grenade_shell",//MA5B Assault Rifle Grenade
+	"1Rnd_SmokeOrange_Grenade_shell"//MA5B Assault Rifle Grenade
+],
 	true
 ] call BIS_fnc_addVirtualMagazineCargo;
 
 [
 	_box,
 	[
-		"srifle_GM6_camo_F","srifle_LRR_camo_F","hgun_P07_F","hgun_Pistol_heavy_01_F","SMG_01_F","SMG_02_F","arifle_MX_F","arifle_MXC_F","arifle_MXM_F","arifle_MX_GL_F","arifle_MX_SW_F","arifle_MX_Black_F","arifle_MXC_Black_F","arifle_MXC_Black_F","arifle_MXC_Black_F","arifle_MXC_Black_F","arifle_MXM_Black_F","arifle_MX_GL_Black_F","arifle_MX_SW_Black_F","srifle_LRR_F","launch_NLAW_F","launch_B_Titan_F","launch_B_Titan_short_F","hgun_ACPC2_F","hgun_PDW2000_F","arifle_Mk20_F","arifle_Mk20C_F","arifle_Mk20_GL_F","arifle_Mk20_plain_F","arifle_Mk20C_plain_F","arifle_Mk20_GL_plain_F","LMG_Mk200_F","srifle_EBR_F","srifle_GM6_F","launch_I_Titan_F","launch_I_Titan_short_F","arifle_TRG20_F","arifle_TRG21_F","arifle_TRG21_GL_F","arifle_SDAR_F","Binocular","Rangefinder","Laserdesignator","MineDetector","srifle_DMR_02_ACO_F","srifle_DMR_02_ARCO_F","srifle_DMR_02_camo_AMS_LP_F","srifle_DMR_02_DMS_F","srifle_DMR_02_MRCO_F","srifle_DMR_02_sniper_AMS_LP_S_F","srifle_DMR_02_F","srifle_DMR_02_camo_F","srifle_DMR_02_sniper_F","srifle_DMR_02_SOS_F","srifle_DMR_03_ACO_F","srifle_DMR_03_AMS_F","srifle_DMR_03_ARCO_F","srifle_DMR_03_DMS_F","srifle_DMR_03_DMS_snds_F","srifle_DMR_03_MRCO_F","srifle_DMR_03_SOS_F","srifle_DMR_03_tan_AMS_LP_F","srifle_DMR_03_F","srifle_DMR_03_khaki_F","srifle_DMR_03_multicam_F","srifle_DMR_03_tan_F","srifle_DMR_03_woodland_F","srifle_DMR_04_ACO_F","srifle_DMR_04_ARCO_F","srifle_DMR_04_DMS_F","srifle_DMR_05_ACO_F","srifle_DMR_05_ARCO_F","srifle_DMR_05_DMS_F","srifle_DMR_05_DMS_snds_F","srifle_DMR_05_KHS_LP_F","srifle_DMR_05_MRCO_F","srifle_DMR_05_SOS_F","srifle_DMR_05_blk_F","srifle_DMR_05_hex_F","srifle_DMR_05_tan_f","srifle_DMR_06_camo_F","srifle_DMR_06_camo_khs_F","srifle_DMR_06_olive_F","MMG_02_black_F","MMG_02_camo_F","MMG_02_sand_F","MMG_02_black_RCO_BI_F","MMG_02_sand_RCO_LP_F","MMG_01_base_F","MMG_01_hex_F","MMG_01_hex_ARCO_LP_F","MMG_01_tan_F"
-	],
+	"OPTRE_M6C",//M6C Handgun
+	"OPTRE_M6G",//M6G Magnum
+	"OPTRE_M7_Folded"//M7 SMG Folded
+	"OPTRE_M7",//M7 SMG
+	"OPTRE_BR55HB",//Battle Rifle
+	"OPTRE_M392_DMR",//M392 DMR
+	"OPTRE_M45",//M45 Shotgun 
+	"OPTRE_M45A",//M45 Semi-Auto
+	"OPTRE_M45E",//M45 Combat
+	"OPTRE_M73_base",//M73 LMG
+	"OPTRE_MA5BGL",//MA5B AR GL
+	"OPTRE_SRS99D",//SRS99D Sniper Rifle
+	"OPTRE_M41_SSR",//M41 Rocket Launcher
+	"OPTRE_M41_SSR_G"//M41 Rocket Launcher Guided
+],
 	true
 ] call BIS_fnc_addVirtualWeaponCargo;
 	
@@ -37,7 +117,157 @@ _box = _this select 0;
 [
 	_box,
 	[
-		"G_B_Diving","G_Balaclava_blk","G_Balaclava_combat","G_Combat","G_Tactical_Black","G_Tactical_Clear","G_Shades_Black","G_Lowprofile","G_Bandanna_shades","V_TacVestIR_blk","U_I_G_Story_Protagonist_F","U_B_CombatUniform_mcam", "U_B_CombatUniform_mcam_tshirt", "U_B_CombatUniform_mcam_vest", "U_B_CombatUniform_mcam_worn", "U_B_CombatUniform_sgg","U_B_CombatUniform_sgg_tshirt", "U_B_CombatUniform_sgg_vest", "U_B_CombatUniform_wdl", "U_B_CombatUniform_wdl_tshirt", "U_B_CombatUniform_wdl_vest", "U_B_SpecopsUniform_sgg","U_B_GhillieSuit","U_B_HeliPilotCoveralls","U_B_PilotCoveralls", "U_B_Wetsuit","U_B_CTRG_1","U_B_CTRG_2","U_B_CTRG_3","U_B_survival_uniform","V_PlateCarrier1_blk","V_PlateCarrier1_rgr","V_PlateCarrier2_rgr","V_PlateCarrier3_rgr","V_PlateCarrierGL_rgr","V_PlateCarrierSpec_rgr","V_PlateCarrierL_CTRG","V_PlateCarrierH_CTRG","V_PlateCarrier_Kerry","V_Chestrig_khk","V_Chestrig_rgr","V_Chestrig_oli","V_Chestrig_blk","V_RebreatherB","H_HelmetB","H_HelmetB_camo","H_HelmetB_paint","H_HelmetB_grass","H_HelmetB_snakeskin","H_HelmetB_desert","H_HelmetB_black","H_HelmetB_sand","H_HelmetB_light","H_HelmetB_light_desert","H_HelmetB_light_black","H_HelmetB_light_sand","H_HelmetB_light_grass","H_HelmetB_light_snakeskin","H_HelmetSpecB","H_HelmetSpecB_paint1","H_HelmetSpecB_paint2","H_HelmetSpecB_blk","H_HelmetB_plain_mcamo","H_HelmetB_plain_blk","H_HelmetCrew_B","H_CrewHelmetHeli_B","H_PilotHelmetHeli_B","H_PilotHelmetFighter_B","H_Bandanna_mcamo","H_BandMask_blk","H_BandMask_demon","H_BandMask_khk","H_BandMask_reaper","H_Booniehat_mcamo","H_MilCap_mcamo","H_Beret_grn_SF","H_Beret_brn_SF","H_Beret_02","H_Cap_brn_SPECOPS","H_Cap_tan_specops_US","H_Cap_khaki_specops_UK", "ItemWatch","ItemCompass","ItemGPS","ItemRadio","ItemMap","NVGoggles","NVGoggles_OPFOR","FirstAidKit","Medikit","ToolKit","muzzle_snds_L", "muzzle_snds_acp", "muzzle_snds_M", "muzzle_snds_H", "muzzle_snds_H_MG", "muzzle_snds_B", "acc_flashlight", "acc_pointer_IR", "optic_Yorris", "optic_MRD", "optic_Aco_smg", "optic_ACO_grn_smg", "optic_Holosight_smg", "optic_Aco", "optic_ACO_grn", "optic_Holosight", "optic_Hamr", "optic_Arco", "optic_MRCO", "optic_DMS", "optic_SOS", "optic_LRPS", "optic_NVS", "optic_Nightstalker", "optic_tws", "optic_tws_mg","H_Shemag_khk","H_Shemag_olive","H_Shemag_olive_hs","H_Shemag_tan"
-	],
+	//UNSC_UNIFORMS //ARI = Arid; DES = Desert; TRO = Tropical; WDL = Woodland; L= Light; M = Medium;
+	//Recon Helmet
+	"OPTRE_UNSC_Recon_Helmet",
+	//Army Uniforms
+	"OPTRE_UNSC_Army_Uniform_L_ARI",
+	"OPTRE_UNSC_Army_Uniform_L_DES",
+	"OPTRE_UNSC_Army_Uniform_L_TRO",
+	"OPTRE_UNSC_Army_Uniform_L_WDL",
+	"OPTRE_UNSC_Army_Uniform_M_ARI",
+	"OPTRE_UNSC_Army_Uniform_M_DES",
+	"OPTRE_UNSC_Army_Uniform_M_TRO",
+	"OPTRE_UNSC_Army_Uniform_M_WDL",
+	"OPTRE_UNSC_Army_Uniform_ARI",
+	"OPTRE_UNSC_Army_Uniform_DES",
+	"OPTRE_UNSC_Army_Uniform_TRO",
+	"OPTRE_UNSC_Army_Uniform_WDL",
+	//Army Vests
+	"OPTRE_UNSC_M52_Vest_DES",
+	"OPTRE_UNSC_M52_Vest_WDL",
+	"OPTRE_UNSC_M52_Vest_Sniper_DES",
+	"OPTRE_UNSC_M52_Vest_Sniper_WDL",
+	"OPTRE_UNSC_M52_Vest_Vacuum_DES",
+	"OPTRE_UNSC_M52_Vest_Vacuum_WDL",
+	//Army Headgear
+	"OPTRE_BoonieHat_Army_ARI",
+	"OPTRE_BoonieHat_Army_DES",
+	"OPTRE_BoonieHat_Army_TRO",
+	"OPTRE_BoonieHat_Army_WDL",
+	"OPTRE_UNSC_CH252_Helmet_DES",
+	"OPTRE_UNSC_CH252_Helmet_WDL",
+	"OPTRE_UNSC_CH252_Helmet_Sniper_DES",
+	"OPTRE_UNSC_CH252_Helmet_Sniper_WDL",
+	"OPTRE_UNSC_CH252_Helmet_Vacuum_DES",
+	"OPTRE_UNSC_CH252_Helmet_Vacuum_WDL",
+	"OPTRE_PatrolCap_Army_ARI",
+	"OPTRE_PatrolCap_Army_DES",
+	"OPTRE_PatrolCap_Army_TRO",
+	"OPTRE_PatrolCap_Army_WDL",
+	//Marine Uniforms
+	"OPTRE_UNSC_Marine_Uniform",
+	"OPTRE_UNSC_Marine_Uniform_L",
+	"OPTRE_UNSC_Marine_Uniform_M",
+	//Marine Vests
+	"OPTRE_UNSC_Marine_Vest",
+	"OPTRE_UNSC_Marine_Vest_Sniper",
+	"OPTRE_UNSC_Marine_Vest_Vacuum",
+	//Marine Headgear
+	"OPTRE_BoonieHat_Marine",
+	"OPTRE_UNSC_Marine_Helmet",
+	"OPTRE_UNSC_Marine_Helmet_Sniper",
+	"OPTRE_UNSC_Marine_Helmet_Vacuum",
+	"OPTRE_PatrolCap_Marine",
+	//ODST Uniforms
+	"OPTRE_UNSC_ODST_Uniform",
+	"OPTRE_UNSC_ODST_Uniform_Scorch",
+	"OPTRE_UNSC_ODST_Uniform_Stirls",
+	"OPTRE_UNSC_ODST_Uniform_TheDog",
+	"OPTRE_UNSC_ODST_Uniform_Urban",
+	"OPTRE_UNSC_ODST_Uniform_Zero",
+	"OPTRE_UNSC_ODST_Uniform_L",
+	"OPTRE_UNSC_ODST_Uniform_M",
+	"OPTRE_UNSC_ODST_Uniform_Sniper",
+	//ODST Vests
+	"OPTRE_UNSC_ODST_Vest",
+	"OPTRE_UNSC_ODST_Vest_Blue",
+	"OPTRE_UNSC_ODST_Vest_Green",
+	"OPTRE_UNSC_ODST_Vest_Orange",
+	"OPTRE_UNSC_ODST_Vest_Purple",
+	"OPTRE_UNSC_ODST_Vest_Red",
+	"OPTRE_UNSC_ODST_Vest_Yellow",
+	"OPTRE_UNSC_ODST_Vest_Scorch",
+	"OPTRE_UNSC_ODST_Vest_Stirls",
+	"OPTRE_UNSC_ODST_Vest_TheDog",
+	"OPTRE_UNSC_ODST_Vest_Urban",
+	"OPTRE_UNSC_ODST_Vest_Zero",
+	//ODST Headgear
+	"OPTRE_BoonieHat_ODST",
+	"OPTRE_Cap_ODST",
+	"OPTRE_UNSC_ODST_Helmet",
+	"OPTRE_UNSC_ODST_Helmet_CBRN",
+	"OPTRE_UNSC_ODST_Helmet_Comms",
+	"OPTRE_UNSC_ODST_Helmet_Recon",
+	"OPTRE_UNSC_ODST_Helmet_Sniper",
+	"OPTRE_UNSC_ODST_Helmet_Blue",
+	"OPTRE_UNSC_ODST_Helmet_Green",
+	"OPTRE_UNSC_ODST_Helmet_Orange",
+	"OPTRE_UNSC_ODST_Helmet_Purple",
+	"OPTRE_UNSC_ODST_Helmet_Red",
+	"OPTRE_UNSC_ODST_Helmet_Yellow",
+	"OPTRE_UNSC_ODST_Helmet_Scorch",
+	"OPTRE_UNSC_ODST_Helmet_Stirls",
+	"OPTRE_UNSC_ODST_Helmet_TheDog",
+	"OPTRE_UNSC_ODST_Helmet_Urban",
+	"OPTRE_UNSC_ODST_Helmet_Zero",
+	//Medical Uniforms
+	"OPTRE_UNSC_Army_Uniform_Medic",
+	"OPTRE_UNSC_ODST_Uniform_Medic",
+	"OPTRE_UNSC_ODST_Uniform_Medic",
+	//Medical Vests
+	"OPTRE_UNSC_M52_Vest_MED",
+	"OPTRE_UNSC_M52_Vest_Vacuum_MED",
+	"OPTRE_UNSC_ODST_Vest_Medic",
+	//Medical Headgear
+	"OPTRE_UNSC_CH252_Helmet_MED",
+	"OPTRE_UNSC_CH252_Helmet_Vacuum_MED",
+	"OPTRE_UNSC_ODST_Helmet_Medic",
+	//AirForce Gear
+	"OPTRE_UNSC_Airforce_Uniform",
+	"OPTRE_UNSC_Airforce_Vest",
+	"OPTRE_BoonieHat_Airforce",
+	"OPTRE_PatrolCap_Airforce",
+	"H_PilotHelmetHeli_B",
+	//UNSC Attachment IDs
+	"OPTRE_M6C_RDS",//M6C Handgun Attachment
+	"OPTRE_M6C_Laser",//M6C Handgun Attachment
+	"OPTRE_M6C_compensator",//M6C Handgun Attachment
+	"OPTRE_M6G_Scope",//M6G Magnum Attachment
+	"OPTRE_M6G_Flashlight",//M6G Magnum Attachment
+	"OPTRE_M6_silencer",//M6 Pistols Attachment
+	"OPTRE_M7_Sight",//M7 SMG Attachment
+	"OPTRE_M7_Flashlight",//M7 SMG Attachment
+	"OPTRE_M7_silencer",//M7 SMG Attachment
+	"OPTRE_M7_Laser",//M7 SMG Attachment
+	"OPTRE_BR55HB_Scope",//Battle Rifle Attachment
+	"OPTRE_M392_Scope",//M392 DMR Attachment
+	"OPTRE_M45_Flashlight",//M45 Attachment
+	"OPTRE_M45_Flashlight_red",//M45 Attachment
+	"OPTRE_M73_SmartLink",//M73 LMG Attachment
+	"OPTRE_MA5B_AmmoCounter",//MA5B Assault Rifle Attachment
+	"OPTRE_MA5B_AmmoCounter_NoIS",//MA5B Assault Rifle Attachment
+	"OPTRE_SRS99_Laser",//SRS99D Sniper Rifle Attachment
+	"OPTRE_SRS99_Scope",//SRS99D Sniper Rifle Attachment
+	"OPTRE_SRS99_Bipod",//SRS99D Sniper Rifle Attachment
+	"bipod_01_F_blk",//M392 DMR, M73 LMG Attachment
+	"muzzle_snds_B",//Battle Rifle, DMR, M73 LMG, Assault Rifle Attachment
+	"acc_pointer_IR",//Battle Rifle, DMR, Shotgun, Assault Rifle Attachment
+	"acc_flashlight",//Battle Rifle, DMR, Shotgun, Assault Rifle Attachment
+	//UNSC ITEM IDs
+	"OPTRE_NVG",
+	"OPTRE_Biofoam",
+	"OPTRE_MedKit",
+	"ItemMap",
+	"ItemCompass",
+	"ItemWatch",
+	"ItemRadio",
+	"ItemGPS",
+	"Rangefinder",
+	"Laserdesignator",
+	"ToolKit",
+	"MineDetector",
+	"B_UavTerminal"
+],
 	true
 ] call BIS_fnc_addVirtualItemCargo;
