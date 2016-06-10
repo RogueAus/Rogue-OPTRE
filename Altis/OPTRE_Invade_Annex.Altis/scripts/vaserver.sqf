@@ -97,7 +97,7 @@ _box = _this select 0;
 	[
 	"OPTRE_M6C",//M6C Handgun
 	"OPTRE_M6G",//M6G Magnum
-	"OPTRE_M7_Folded"//M7 SMG Folded
+	"OPTRE_M7_Folded",//M7 SMG Folded
 	"OPTRE_M7",//M7 SMG
 	"OPTRE_BR55HB",//Battle Rifle
 	"OPTRE_M392_DMR",//M392 DMR
