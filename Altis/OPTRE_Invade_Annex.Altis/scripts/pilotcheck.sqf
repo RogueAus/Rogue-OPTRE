@@ -11,7 +11,7 @@ _iampilot = ({typeOf player == _x} count _pilots) > 0;
 
 //Remove comments and insert UIDs into the whitelist to exempt individuals from this script
 _uid = getPlayerUID player;
-_whitelist = ["76561198059693747"/*Rogue*/,"76561198160246849"/*Machine*/,"76561198111830735"/*ItsLiam*/,""/*Matt.k (Waiting his PID*/];
+_whitelist = ["76561198059693747"/*Rogue*/,"76561198160246849"/*Machine*/,"76561198111830735"/*ItsLiam*/,"76561198183504975"/*Matt.k*/];
 
 if (_uid in _whitelist) exitWith {};
 
