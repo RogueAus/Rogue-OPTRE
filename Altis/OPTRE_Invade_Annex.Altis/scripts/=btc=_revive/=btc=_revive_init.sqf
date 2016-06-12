@@ -29,7 +29,7 @@ BTC_disable_respawn = 0;
 BTC_respawn_gear    = 1;
 BTC_active_lifes    = 10;
 BTC_lifes           = 999;
-BTC_spectating      = 0;											//0 = disable; 1 = units group; 2 = side units; 3 = all units
+BTC_spectating      = 2;											//0 = disable; 1 = units group; 2 = side units; 3 = all units
 BTC_spectating_view = [0,0];										//To force a view set the first number of the array to 1. The second one is the view mode: 0 = first person; 1 = behind the back; 2 = High; 3 = free
 BTC_s_mode_view     = ["First person","Behind the back","High","Free"];
 BTC_black_screen    = 0;											//Black screen + button while unconscious or action wheel and clear view
@@ -40,7 +40,7 @@ BTC_respawn_time    = 3;
 BTC_active_mobile   = 0;											//Active mobile respawn (You have to put in map the vehicle and give it a name. Then you have to add one object per side to move to the mobile (BTC_base_flag_west,BTC_base_flag_east) - (1 = yes, 0 = no))
 BTC_mobile_respawn  = 0;											//Active the mobile respawn fnc (1 = yes, 0 = no)
 BTC_mobile_respawn_time = 30;										//Secs delay for mobile vehicle to respawn
-BTC_need_first_aid = 0;												//You need a first aid kit to revive (1 = yes, 0 = no)
+BTC_need_first_aid = 1;												//You need a first aid kit to revive (1 = yes, 0 = no)
 BTC_pvp = 0; 														//(disable the revive option for the enemy)
 BTC_injured_marker = 0;
 BTC_3d_can_see     = ["OPTRE_UNSC_Marine_Soldier_Corpsman","OPTRE_UNSC_ODST_Soldier_Paramedic","OPTRE_UNSC_Army_Soldier_Medic"];

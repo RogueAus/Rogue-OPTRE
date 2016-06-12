@@ -487,9 +487,9 @@ BTC_r_apply_bandage =
 	_array = (items player);
 	switch (true) do
 	{
-		case (BTC_r_med_fa == 0) : {if (_array find "FirstAidKit" != -1) then {_cond = true;};};
-		case (BTC_r_med_fa == 1) : {if (_array find "FirstAidKit" != -1 || _array find "Medikit" != -1) then {_cond = true;};};
-		case (BTC_r_med_fa == 2) : {if (_array find "Medikit" != -1) then {_cond = true;};};
+		case (BTC_r_med_fa == 0) : {if (_array find "OPTRE_Biofoam" != -1) then {_cond = true;};};
+		case (BTC_r_med_fa == 1) : {if (_array find "OPTRE_Biofoam" != -1 || _array find "OPTRE_MedKit" != -1) then {_cond = true;};};
+		case (BTC_r_med_fa == 2) : {if (_array find "OPTRE_MedKit" != -1) then {_cond = true;};};
 	};
 	BTC_r_action_menu = false;
 	if (!isNull BTC_r_unit_dlg && _cond) then
@@ -543,11 +543,11 @@ BTC_r_apply_bandage =
 		};
 		switch (true) do
 		{
-			case (BTC_r_med_fa == 0) : {player removeItem "FirstAidKit";};
-			case (BTC_r_med_fa == 1) : {if (_array find "Medikit" == -1) then {player removeItem "FirstAidKit";};};
+			case (BTC_r_med_fa == 0) : {player removeItem "OPTRE_Biofoam";};
+			case (BTC_r_med_fa == 1) : {if (_array find "OPTRE_MedKit" == -1) then {player removeItem "OPTRE_Biofoam";};};
 		};
 	};
-	if (!_cond) then {hint "You don't have a first aid kit!";closeDialog 0;};
+	if (!_cond) then {hint "You don't have Biofoam!";closeDialog 0;};
 	BTC_r_action_menu = true;
 };
 
@@ -557,9 +557,9 @@ BTC_r_apply_tra =
 	_array = items player;
 	switch (true) do
 	{
-		case (BTC_r_med_fa == 0) : {if (_array find "FirstAidKit" != -1) then {_cond = true;};};
-		case (BTC_r_med_fa == 1) : {if (_array find "FirstAidKit" != -1 || _array find "Medikit" != -1) then {_cond = true;};};
-		case (BTC_r_med_fa == 2) : {if (_array find "Medikit" != -1) then {_cond = true;};};
+		case (BTC_r_med_fa == 0) : {if (_array find "OPTRE_Biofoam" != -1) then {_cond = true;};};
+		case (BTC_r_med_fa == 1) : {if (_array find "OPTRE_Biofoam" != -1 || _array find "OPTRE_MedKit" != -1) then {_cond = true;};};
+		case (BTC_r_med_fa == 2) : {if (_array find "OPTRE_MedKit" != -1) then {_cond = true;};};
 	};
 	BTC_r_action_menu = false;
 	if (!isNull BTC_r_unit_dlg && _cond) then
@@ -595,11 +595,11 @@ BTC_r_apply_tra =
 		};
 		switch (true) do
 		{
-			case (BTC_r_med_fa == 0) : {player removeItem "FirstAidKit";};
-			case (BTC_r_med_fa == 1) : {if (_array find "Medikit" == -1) then {player removeItem "FirstAidKit";};};
+			case (BTC_r_med_fa == 0) : {player removeItem "OPTRE_Biofoam";};
+			case (BTC_r_med_fa == 1) : {if (_array find "OPTRE_MedKit" == -1) then {player removeItem "OPTRE_Biofoam";};};
 		};
 	};
-	if (!_cond) then {hint "You don't have a first aid kit!";closeDialog 0;};
+	if (!_cond) then {hint "You don't have Biofoam!";closeDialog 0;};
 	BTC_r_action_menu = true;
 };
 
@@ -609,9 +609,9 @@ BTC_r_apply_mor =
 	_array = items player;
 	switch (true) do
 	{
-		case (BTC_r_med_fa == 0) : {if (_array find "FirstAidKit" != -1) then {_cond = true;};};
-		case (BTC_r_med_fa == 1) : {if (_array find "FirstAidKit" != -1 || _array find "Medikit" != -1) then {_cond = true;};};
-		case (BTC_r_med_fa == 2) : {if (_array find "Medikit" != -1) then {_cond = true;};};
+		case (BTC_r_med_fa == 0) : {if (_array find "OPTRE_Biofoam" != -1) then {_cond = true;};};
+		case (BTC_r_med_fa == 1) : {if (_array find "OPTRE_Biofoam" != -1 || _array find "OPTRE_MedKit" != -1) then {_cond = true;};};
+		case (BTC_r_med_fa == 2) : {if (_array find "OPTRE_MedKit" != -1) then {_cond = true;};};
 	};
 	BTC_r_action_menu = false;
 	if (!isNull BTC_r_unit_dlg && _cond) then
@@ -653,11 +653,11 @@ BTC_r_apply_mor =
 		};
 		switch (true) do
 		{
-			case (BTC_r_med_fa == 0) : {player removeItem "FirstAidKit";};
-			case (BTC_r_med_fa == 1) : {if (_array find "Medikit" == -1) then {player removeItem "FirstAidKit";};};
+			case (BTC_r_med_fa == 0) : {player removeItem "OPTRE_Biofoam";};
+			case (BTC_r_med_fa == 1) : {if (_array find "OPTRE_MedKit" == -1) then {player removeItem "OPTRE_Biofoam";};};
 		};
 	};
-	if (!_cond) then {hint "You don't have a first aid kit!";closeDialog 0;};
+	if (!_cond) then {hint "You don't have Biofoam!";closeDialog 0;};
 	BTC_r_action_menu = true;
 };
 
@@ -667,9 +667,9 @@ BTC_r_apply_epi =
 	_array = items player;
 	switch (true) do
 	{
-		case (BTC_r_med_fa == 0) : {if (_array find "FirstAidKit" != -1) then {_cond = true;};};
-		case (BTC_r_med_fa == 1) : {if (_array find "FirstAidKit" != -1 || _array find "Medikit" != -1) then {_cond = true;};};
-		case (BTC_r_med_fa == 2) : {if (_array find "Medikit" != -1) then {_cond = true;};};
+		case (BTC_r_med_fa == 0) : {if (_array find "OPTRE_Biofoam" != -1) then {_cond = true;};};
+		case (BTC_r_med_fa == 1) : {if (_array find "OPTRE_Biofoam" != -1 || _array find "OPTRE_MedKit" != -1) then {_cond = true;};};
+		case (BTC_r_med_fa == 2) : {if (_array find "OPTRE_MedKit" != -1) then {_cond = true;};};
 	};
 	BTC_r_action_menu = false;
 	if (!isNull BTC_r_unit_dlg && _cond) then
@@ -710,11 +710,11 @@ BTC_r_apply_epi =
 		};
 		switch (true) do
 		{
-			case (BTC_r_med_fa == 0) : {player removeItem "FirstAidKit";};
-			case (BTC_r_med_fa == 1) : {if (_array find "Medikit" == -1) then {player removeItem "FirstAidKit";};};
+			case (BTC_r_med_fa == 0) : {player removeItem "OPTRE_Biofoam";};
+			case (BTC_r_med_fa == 1) : {if (_array find "OPTRE_MedKit" == -1) then {player removeItem "OPTRE_Biofoam";};};
 		};
 	};
-	if (!_cond) then {hint "You don't have a first aid kit!";closeDialog 0;};
+	if (!_cond) then {hint "You don't have Biofoam!";closeDialog 0;};
 	BTC_r_action_menu = true;
 };
 
@@ -749,7 +749,7 @@ BTC_r_apply_med =
 	{
 		private ["_array"];
 		_array = items player;
-		if (_array find "Medikit" != -1) then {_cond = true;};
+		if (_array find "OPTRE_MedKit" != -1) then {_cond = true;};
 	} else {_cond = true;};
 
 	BTC_r_action_menu = false;
@@ -993,14 +993,14 @@ BTC_first_aid =
 	_array_item_injured = items _injured;
 	_cond = false;
 	if (BTC_need_first_aid == 0) then {_cond = true;};
-	if ((_array_item_injured find "FirstAidKit" == -1) && (BTC_need_first_aid == 1)) then {_cond = false;} else {_cond = true;};
-	if (!_cond && BTC_need_first_aid == 1) then {if ((_array_item find "FirstAidKit" == -1)) then {_cond = false;} else {_cond = true;};};
+	if ((_array_item_injured find "OPTRE_Biofoam" == -1) && (BTC_need_first_aid == 1)) then {_cond = false;} else {_cond = true;};
+	if (!_cond && BTC_need_first_aid == 1) then {if ((_array_item find "OPTRE_Biofoam" == -1)) then {_cond = false;} else {_cond = true;};};
 	if (!_cond) exitWith {hint "Can't revive him";};
-	_fak = ["FirstAidKit"];
+	_fak = ["OPTRE_Biofoam"];
 	if (({(_x in _array_item)} count _fak) > 0) then {
-		player removeItem "FirstAidKit";
+		player removeItem "OPTRE_Biofoam";
 	} else {
-		_injured removeItem "FirstAidKit";
+		_injured removeItem "OPTRE_Biofoam";
 	};
 	player playMove "AinvPknlMstpSlayWrflDnon_medic";
 	sleep 5;
@@ -1264,7 +1264,7 @@ BTC_player_killed = {
 			if (format ["%1", player getVariable "BTC_need_revive"] == "0" && !BTC_respawn_cond) then
 			{
 				if (BTC_black_screen == 1) then {titleText ["", "BLACK IN"]; titleFadeOut 1;} else {hintSilent "";};
-				if (BTC_need_first_aid == 1 && ((items player) find "FirstAidKit" != -1)) then {player removeItem "FirstAidKit";};
+				if (BTC_need_first_aid == 1 && ((items player) find "OPTRE_Biofoam" != -1)) then {player removeItem "OPTRE_Biofoam";};
 				player playMove "amovppnemstpsraswrfldnon";
 				player playMove "";
 			};
@@ -1399,9 +1399,9 @@ BTC_check_action_first_aid = {
 	if (_cond && BTC_need_first_aid == 1) then
 	{
 
-		if (_array_item find "FirstAidKit" == -1) then {_cond = false;};
+		if (_array_item find "OPTRE_Biofoam" == -1) then {_cond = false;};
 		_array_item_injured = items _injured;
-		if (!_cond && _array_item_injured find "FirstAidKit" != -1) then {_cond = true;};
+		if (!_cond && _array_item_injured find "OPTRE_Biofoam" != -1) then {_cond = true;};
 	};
 	_cond
 };
@@ -1417,7 +1417,7 @@ BTC_check_action_HEMTT = {
 			if ((count _hemtt) > 0) then {
 				_itemsP = items player;
 				_itemsI = items (_men select 1);
-				_fak = ["FirstAidKit"];
+				_fak = ["OPTRE_Biofoam"];
 				if (({(_x in _itemsP) || (_x in _itemsI)} count _fak) > 0) then {
 					_cond = true;
 				};
@@ -1460,8 +1460,8 @@ BTC_can_revive =
 	{if (_unit isKindOf _x) then {_cond = true};} count BTC_who_can_revive;
 	if (_cond && BTC_need_first_aid == 1) then
 	{
-		if (_array_item_unit find "FirstAidKit" == -1) then {_cond = false;};
-		if (!_cond && _array_item_injured find "FirstAidKit" != -1) then {_cond = true;};
+		if (_array_item_unit find "OPTRE_Biofoam" == -1) then {_cond = false;};
+		if (!_cond && _array_item_injured find "OPTRE_Biofoam" != -1) then {_cond = true;};
 	};
 	_cond
 };
